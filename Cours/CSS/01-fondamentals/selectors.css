@@ -1,9 +1,8 @@
 /* Groupe de sélecteurs */
 h1,
-p,
-h2 {
-  color: palevioletred;
-  font-style: italic;
+h2,
+p {
+  color: purple;
 }
 /* Sélecteur id */
 #title {
@@ -19,4 +18,10 @@ h2 {
 .vert {
   color: green;
   background-color: blue;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+div > p {
+  color: grey;
 }
