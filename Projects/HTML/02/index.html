@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application de photo de chats</title>
+  </head>
+  <h1>Application photo de chats</h1>
+  <h2>Photos de chats</h2>
+  <p>
+    Voir plus de
+    <a href="https://www.freecatphotoapp.com/">photos de chats</a> dans notre
+    galerie.
+  </p>
+  <a href="https://www.freecatphotoapp.com/">
+    <img src="./resources/images/relaxing-cat.jpg" alt="chat1" />
+  </a>
+  <h2>Listes de chats</h2>
+  <h3>Ce que les chats adorent :</h3>
+  <ul>
+    <li>L'herbe à chat</li>
+    <li>Les pointeurs laser</li>
+    <li>Les lasagnes</li>
+    <img src="./resources/images/lasagna.jpg" alt="lasagnes" />
+    <p>Les chats <em>adorent</em> les lasagnes</p>
+  </ul>
+  <h3>Top 3 des choses que les chats détestent :</h3>
+  <ol>
+    <th>1.</th>
+    <td>Le traitement contre les puces</td>
+    <br />
+    <th>2.</th>
+    <td>Le tonnerre</td>
+    <br />
+    <th>3.</th>
+    <td>Les autres chats</td>
+    <br />
+    <img src="./resources/images/cats.jpg" alt="chats" />
+    <p>Les chats <b>détestent</b> les autres chats.</p>
+  </ol>
+  <h2>Formulaire de chat</h2>
+  <form>
+    <label for="intorext"></label>
+    <fieldset>
+      <legend>Votre chat est-il un chat d'intérieur ou d'extérieur ?</legend>
+      <input type="radio" id="int" name="intorext" value="interieur" />
+      <label for="int">Intérieur</label>
+      <input type="radio" id="ext" name="intorext" value="exterieur" />
+      <label for="ext">Extérieur</label>
+    </fieldset>
+    <br />
+    <label for="mindsetcat"></label>
+    <fieldset>
+      <legend>Quelle est la personnalité de votre chat ?</legend>
+      <input type="checkbox" id="aimant" name="perso" value="aimant" />
+      <label for="aimant">Aimant</label>
+      <input type="checkbox" id="faineant" name="perso" value="faineant" />
+      <label for="faineant">Fainéant</label>
+      <input type="checkbox" id="energique" name="perso" value="energique" />
+      <label for="energique">Énergique</label>
+    </fieldset>
+    <br />
+    <input type="url" placeholder="URL de photo de chat" required />
+    <br />
+    <br />
+    <input type="submit" />
+  </form>
+</html>
