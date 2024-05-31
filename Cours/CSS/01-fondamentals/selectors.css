@@ -1,0 +1,22 @@
+/* Groupe de sélecteurs */
+h1,
+p,
+h2 {
+  color: palevioletred;
+  font-style: italic;
+}
+/* Sélecteur id */
+#title {
+  color: grey;
+}
+#red {
+  color: red;
+}
+.bleu {
+  color: blue;
+  background-color: green;
+}
+.vert {
+  color: green;
+  background-color: blue;
+}
