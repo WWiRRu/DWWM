@@ -1,0 +1,13 @@
+{
+    "social_links": [
+        {
+            "name": "Twitter", "url": "https://twitter.com", "icon": "fa-brands fa-twitter", "color": "#1DA1F2"
+        },
+        {
+            "name": "Facebook", "url": "https://facebook.com", "icon": "fa-brands fa-facebook", "color": "#4267B2"
+        },
+        {
+            "name": "GitHub", "url": "https://github.com/WWiRRu", "icon": "fa-brands fa-github", "color": "#000000"
+        }
+    ]
+}
