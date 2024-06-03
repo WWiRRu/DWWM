@@ -1,13 +1,25 @@
+* {
+  font-size: 30px;
+}
 .icon {
   color: red;
   font-size: 40px;
 }
-#first {
-  color: blue;
+.icon:hover {
+  color: rgb(255, 123, 123);
+  font-size: 45px;
 }
+#first,
 #second {
   color: blue;
 }
+#first:hover,
+#second:hover {
+  color: rgb(182, 182, 255);
+}
 .container p {
   color: gray;
+}
+.container p:hover {
+  color: black;
 }

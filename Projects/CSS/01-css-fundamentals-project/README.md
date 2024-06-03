@@ -22,4 +22,4 @@
 
 - Sélectionner la classe `icon` pour ajouter la couleur rouge et une taille de police (font-size:40px)
 - Sélectionner les titres et ajouter la couleur bleu
-- Sélectionner tous les paragraphes dans conteneur et ajouter la couleur gris
+- Sélectionner tous les paragraphes dans les conteneurs et ajouter la couleur gris
