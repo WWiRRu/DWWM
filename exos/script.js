@@ -40,11 +40,10 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error("Erreur lors du chargement des liens sociaux:", error)
     );
   const form = document.getElementById("contactForm");
-  form
-    .addEventListener("submit", (event) => {
-      const name = document.getElementById("name").value;
-      const email = document.getElementById("email").value;
-      const message = document.getElementById("message").value;
-    })
-    .catch();
+  form.addEventListener("submit", (event) => {
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+    console.log(`name: ${name}\nemail: ${email}\nmessage: ${message}`);
+  });
 });
