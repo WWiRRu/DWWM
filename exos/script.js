@@ -1,46 +1,50 @@
-document.addEventListener('DOMContentLoaded', () => {
-    fetch('social-medias.json')
-        .then(response => response.json())
-        .then(data => {
-            const socialLinks = data.social_links;
-            const socialLinksContainer = document.querySelector('.social-links');
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("social-medias.json")
+    .then((response) => response.json())
+    .then((data) => {
+      const socialLinks = data.social_links;
+      const socialLinksContainer = document.querySelector(".social-links");
+      if (socialLinks == isNaN) {
+        return;
+      }
+      socialLinks.forEach((link) => {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        a.href = link.url;
+        a.target = "_blank";
 
-            socialLinks.forEach(link => {
-                const li = document.createElement('li');
-                const a = document.createElement('a');
-                a.href = link.url;
-                a.target = '_blank';
+        const icon = document.createElement("i");
+        icon.className = `fab fa-${link.icon}`;
+        icon.addEventListener("mouseover", (event) => {
+          event.target.style.color = link.color;
+        });
+        icon.addEventListener("mouseout", (event) => {
+          event.target.style.color = "white";
+        });
 
-                const icon = document.createElement('i');
-                icon.className = `fab fa-${link.icon}`;
-                icon.addEventListener('mouseover', (event) => {
-                    event.target.style.color = link.color;
-                });
-                icon.addEventListener('mouseout', (event) => {
-                    event.target.style.color = 'white';
-                });
+        const span = document.createElement("span");
+        span.textContent = link.name;
 
-                const span = document.createElement('span');
-                span.textContent = link.name;
+        const abbr = document.createElement("abbr");
+        abbr.title = link.url;
+        abbr.appendChild(span);
 
-                const abbr = document.createElement('abbr');
-                abbr.title = link.url;
-                abbr.appendChild(span);
-
-                a.appendChild(icon);
-                a.appendChild(abbr);
-                li.id = link.name.toLowerCase().replace(' ', '-');
-                li.appendChild(a);
-                socialLinksContainer.appendChild(li);
-            });
-        })
-        .catch(error => console.error('Erreur lors du chargement des liens sociaux:', error));
-        const form = document.getElementById("contactForm");
-        form.addEventListener('submit', (event) =>{
-
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-            
-        }).catch();
+        a.appendChild(icon);
+        a.appendChild(abbr);
+        li.id = link.name.toLowerCase().replace(" ", "-");
+        li.appendChild(a);
+        socialLinksContainer.appendChild(li);
+      });
+    })
+    .catch((error) =>
+      console.error("Erreur lors du chargement des liens sociaux:", error)
+    );
+  const form = document.getElementById("contactForm");
+  form
+    .addEventListener("submit", (event) => {
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+    })
+    .catch();
 });
