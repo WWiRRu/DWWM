@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+}
+.logo{
+    color: #F3F7EC;
+    font-size: 2rem;
+}
+.nav{
+    background: #005C78;
+    height: 10vh;
+}
+.hero{
+    color: #E88D67;
+    background: #F3F7EC
+}
