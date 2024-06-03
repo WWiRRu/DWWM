@@ -1,17 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
 /* Général */
 body {
   font-family: "Lucida Console", "Courier New", monospace;
   padding: 0;
   margin: 0;
-  overflow-x: hidden;
 }
 /* Navbar */
 .navbar {
-  background-color: #2d241e;
-  color: #ffffff;
+  background-color: #373a40;
+  color: #eeeeee;
   padding: 10px 0;
-  max-width: 960px;
+  max-width: 100%;
   margin: 0 auto;
+
   padding: 20px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -27,23 +31,19 @@ body {
   padding: 0;
 }
 
-.nav-links li {
-  background-color: #ffffff;
-  margin: 0 10px;
+.nav-links li a {
+  color: #373a40;
+  background-color: #eeeeee;
+  text-decoration: none;
   padding: 10px 20px;
   border-radius: 10px;
+  display: inline-block;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   transition: background-color 0.3s, transform 0.3s;
 }
 
-.nav-links li a {
-  color: #2d241e;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.nav-links li:hover {
-  background-color: #f4a261;
+.nav-links a:hover {
+  background-color: #dc5f00;
   transform: scale(1.1);
 }
 
@@ -58,12 +58,12 @@ main {
 }
 
 main form {
-  background-color: #ffffff;
+  background-color: #eeeeee;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   width: 100%;
-  max-width: 500px;
+  max-width: 25%;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -73,7 +73,6 @@ main form input[type="text"],
 main form input[type="email"],
 main form input[type="message"],
 main form textarea {
-  width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -86,7 +85,7 @@ main form textarea::placeholder {
 }
 
 main form button {
-  background-color: #2d241e;
+  background-color: #373a40;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -97,27 +96,21 @@ main form button {
 }
 
 main form button:hover {
-  background-color: #f4a261;
+  background-color: #dc5f00;
   transform: scale(1.1);
 }
 
 /* Footer */
 footer {
-  background-color: #2d241e;
-  color: #ffffff;
+  background-color: #373a40;
+  color: #eeeeee;
   text-align: center;
   padding: 40px 0;
   border-top-left-radius: 2vw;
-  border-top-right-radius: 3vw;
+  border-top-right-radius: 2vw;
   border-top: 4px solid #333;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   margin-top: 20px;
-  width: 100vw;
-  transition: transform 0.3s;
-}
-
-footer:hover {
-  transform: scale(1.1);
 }
 
 footer h2 {
@@ -138,11 +131,10 @@ footer ul li {
 }
 
 footer ul li a {
-  color: #ffffff;
+  color: #eeeeee;
   text-decoration: none;
   font-size: 24px;
   transition: color 0.3s;
-  display: block;
 }
 
 footer ul li a i {
@@ -150,7 +142,12 @@ footer ul li a i {
   font-size: 36px;
   margin-bottom: 5px;
 }
-
+footer i {
+  transition: transform 0.3s;
+}
+footer i:hover {
+  transform: scale(1.1);
+}
 footer ul li a span {
   display: block;
   font-size: 14px;

@@ -1,0 +1,24 @@
+/** PIXELS - Valeurs absolues, un point sur l'écran */
+/** FONT-SIZE - Taille de la police */
+/** WIDTH - Largeur d'un élément */
+/** HEIGHT  - Hauteur d'un élément */
+h1 {
+  /** PX - Valeur absolue. La taille sera la même, peu importe la taille de l'écran */
+  font-size: 60px;
+  width: 200px;
+  height: 400px;
+  background-color: blue;
+  color: white;
+}
+
+/** POURCENTAGE - Unité relative. Dépend du parent*/
+.inner {
+  width: 50%;
+  height: 50%;
+  background-color: red;
+}
+.outer {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+}
