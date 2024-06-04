@@ -20,7 +20,7 @@ body{
 }
 .title{
     text-transform: capitalize;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-align: center;
 }
 .text{
