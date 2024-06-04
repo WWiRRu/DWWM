@@ -7,22 +7,16 @@ body{
     margin-inline: auto;
     margin-bottom: 2rem;
     padding: 2rem;
-    max-width: 15vw;
+    max-width: 15rem;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius:15px;
     background: #fff;
-}
-.card-1{
-    border-color: #ff69a6;
 }
 .icon{
     width: 2rem;
     height: 2rem;
     margin-inline: auto;
     border-radius: 100%;
-}
-.card-1 .icon{
-    background: #ff69a6;
 }
 .title{
     text-transform: capitalize;
@@ -34,22 +28,28 @@ body{
 }
 .btn{
     text-transform: capitalize;
-    border-radius: 5px;
+    border-radius: 10px;
     border-style: hidden;
-    margin-left: calc((15vw - 113px) / 2);
+    margin-left: calc((15rem - 113px) / 2);
     padding: 1rem;
+}
+.card-1{
+    border-color: #ff69a6;
+}
+.card-1 .icon{
+    background: #ff69a6;
 }
 .btn-pink{
     background: #ffe8f1;
     color: #ff69a6;
-}
-.btn-blue{
-    background: #ecf4ff;
-    color: #68a3ff;
 }
 .card-2{
     border-color: #68a3ff;
 }
 .card-2 .icon{
     background: #68a3ff;
+}
+.btn-blue{
+    background: #ecf4ff;
+    color: #68a3ff;
 }
