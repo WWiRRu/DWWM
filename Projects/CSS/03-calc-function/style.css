@@ -11,5 +11,10 @@
 }
 .hero{
     color: #E88D67;
-    background: #F3F7EC
+    background: #F3F7EC;
+    min-height: calc(100vh - 10vh);
+}
+.hero-btn{
+    background: #005C78;
+    color: #F3F7EC;
 }
