@@ -1,0 +1,55 @@
+body{
+    margin: 2vw;
+    font-family: system-ui;
+    background: #f1f5f9;
+}
+.card{
+    margin-inline: auto;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    max-width: 15vw;
+    border: 1px solid black;
+    border-radius: 5px;
+    background: #fff;
+}
+.card-1{
+    border-color: #ff69a6;
+}
+.icon{
+    width: 2rem;
+    height: 2rem;
+    margin-inline: auto;
+    border-radius: 100%;
+}
+.card-1 .icon{
+    background: #ff69a6;
+}
+.title{
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.text{
+    color: #64748b;
+}
+.btn{
+    text-transform: capitalize;
+    border-radius: 5px;
+    border-style: hidden;
+    margin-left: calc((15vw - 113px) / 2);
+    padding: 1rem;
+}
+.btn-pink{
+    background: #ffe8f1;
+    color: #ff69a6;
+}
+.btn-blue{
+    background: #ecf4ff;
+    color: #68a3ff;
+}
+.card-2{
+    border-color: #68a3ff;
+}
+.card-2 .icon{
+    background: #68a3ff;
+}
