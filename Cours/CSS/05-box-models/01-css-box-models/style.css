@@ -1,0 +1,53 @@
+/*DEBUG CSS*/
+*{
+    outline: 5px solid green;
+    background: rgba(255,255, 0, 0.5);
+}
+
+h1,p{
+    color: #fff;
+}
+h1{
+    background: red;
+    /* PADDING */
+    /*
+    padding-top: 40px;
+    padding-left: 24px;
+    padding-right: 80px;
+    padding-bottom: 120px;
+    */
+    /*haut/droite/bas/gauche*/
+    padding: 40px 80px 120px 24px;
+    /*Pour partout pareil*/
+    /*
+    padding: 20px;
+    */
+
+
+    /*MARGIN*/
+    /*
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    margin-left: 3rem;
+    margin-right: 2rem;
+    */
+    /*haut/droite/bas/gauche*/
+    margin: 3rem 2rem 2rem 3rem;
+    /*Pour partout pareil*/
+    /*
+    margin: 2rem;
+    */
+    /*Marge de gauche et droite*/
+    /*
+    margin-inline: auto;
+    */
+}
+p{
+    padding: 1rem;
+    background: blue;
+    /*ANGLES*/
+    border: 1px solid black;
+    outline: 5px black solid;
+    outline-offset: -10px;
+    border-radius: 5vh;
+}
