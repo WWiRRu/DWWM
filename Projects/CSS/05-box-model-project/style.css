@@ -1,15 +1,16 @@
+
 body{
     margin: 2vw;
     font-family: system-ui;
     background: #f1f5f9;
 }
 .card{
-    margin-inline: auto;
-    margin-bottom: 2rem;
-    padding: 2rem;
-    max-width: 15rem;
-    border: 1px solid black;
-    border-radius:15px;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    max-width: 20rem;
+    margin: 3rem auto;
+    border: 1px solid transparent;
+    border-radius:0.5rem;
     background: #fff;
 }
 .icon{
@@ -21,18 +22,19 @@ body{
 .title{
     text-transform: capitalize;
     letter-spacing: 1px;
-    text-align: center;
 }
 .text{
     color: #64748b;
+    line-height: 1.5;
 }
 .btn{
     text-transform: capitalize;
     border-radius: 10px;
     border-style: hidden;
-    margin-left: calc((15rem - 113px) / 2);
     padding: 1rem;
 }
+
+
 .card-1{
     border-color: #ff69a6;
 }
@@ -43,6 +45,8 @@ body{
     background: #ffe8f1;
     color: #ff69a6;
 }
+
+
 .card-2{
     border-color: #68a3ff;
 }

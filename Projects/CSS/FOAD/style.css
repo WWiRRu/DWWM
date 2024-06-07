@@ -8,10 +8,11 @@
 body{
     background: #F4D04E;
     font-family: "Figtree", sans-serif;
+    max-height: 100%;
 }
 .card {
     background: white;
-    box-shadow: 0 10px 0 0 rgba(0,0,0,1);
+    box-shadow: 10px 10px 0 0 rgba(0,0,0,1);
     border-radius: 1.25rem;
     border: 1px solid black;
     margin-inline: auto;
@@ -32,6 +33,7 @@ img{
     border-radius: 4px;
     font-family: "Figtree", sans-serif;
     font-size: 14px;
+    font-weight: 900;
     padding: 4px 12px;
     text-align: center;
 }
@@ -63,4 +65,5 @@ footer{
     gap: 12px;
 }
 footer span{
+    font-weight: 500;
 }

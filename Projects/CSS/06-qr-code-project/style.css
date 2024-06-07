@@ -17,8 +17,11 @@ body{
     max-width: 20rem;
     max-height: 31.0625rem;
 }
+/*Toujours mettre ça en image*/
 .card img{
     border-radius: 10px;
+    object-fit: cover;
+    display: block;
 }
 .card .title{
     color: #1F314F;
