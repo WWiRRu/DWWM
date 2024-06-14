@@ -1,0 +1,215 @@
+/*!Import fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
+
+/*! RESET */
+*{
+    /*Reset margins*/
+    margin: 0;
+
+    /*Reset paddings*/
+    padding: 0;
+
+    /*Border box box sizing*/
+    box-sizing: border-box;
+}
+
+:root{
+    /*Vars for font family*/
+    --ff-headings: "Tiny5", sans-serif;
+    --ff-bodys: "Tiny5", sans-serif;
+
+    /*Vars for font size*/
+    --fs-tiny: clamp(0.875rem, 1.5vw, 1.5rem);
+    --fs-xs: clamp(1rem, 2vw, 2rem);
+    --fs-s: clamp(1.25rem, 2.5vw, 2.5rem);
+    --fs-m: clamp(1.5rem, 3vw, 3rem);
+    --fs-l: clamp(2rem, 5vw, 5rem);
+    
+    /*Vars for font weight*/
+    --fw-bold: 800;
+    --fw-medium: 600;
+    --fw-regular: 400;
+
+    /*Vars for primary colors*/
+    --color-primary-100: #edead9;
+    --color-primary-200: #dbd5b3;
+    --color-primary-300: #c9c18c;
+    --color-primary-400: #b7ac66;
+    --color-primary-500: #a59740;
+    --color-primary-600: #847933;
+    --color-primary-700: #635b26;
+    --color-primary-800: #423c1a;
+
+    /*Vars for the rest of the colors*/
+    --color-white: #fff;
+    --color-light-grey: #878787;
+    --color-grey: #4b4b4b;
+    --color-black: #000;
+
+    --color-green-50: #f7fee7;
+    --color-green-800: #3f6212;
+    
+    --color-red-50: #fef2f2;
+    --color-red-800: #991b1b;
+
+    --fluid-width: 90vw;
+    --fixed-width: 37.5rem;
+}
+
+body{
+    font-family: var(--ff-bodys);
+    font-weight: var(--fw-regular);
+    line-height: 1.5;
+    font-size: var(--fs-body);
+    background-color: var(--color-primary-100);
+    color: var(--color-primary-800);
+
+
+    margin: 1.5rem;
+}
+
+h1, h2, h3, h4, h5{
+    text-wrap: balance;
+    font-weight: var(--fw-medium);
+    line-height: 1.1;
+    margin: 0;
+}
+p{
+    max-inline-size: 60ch;
+    text-wrap: pretty;
+}
+a{
+    text-decoration: none;
+    color: var(--color-primary-800);
+    transition: all 0.3s;
+}
+
+a:hover{
+    color: var(--color-primary-500);
+}
+
+ul,ol{
+    list-style: none;
+}
+
+.img{
+    object-fit: cover;
+    max-inline-size: 100%;
+    display: block;
+}
+button{
+    cursor: pointer;
+}
+.btn{
+    font-size: var(--fs-m);
+    font-weight: var(--fw-medium);
+    color: var(--color-white);
+    background-color: var(--color-primary-700);
+    border: transparent;
+    padding: 0.75rem 0.375rem;
+    border-radius: 20px;
+    margin-top: 1rem;
+    line-height: 1.25rem;
+    transition: all 0.5s linear;
+}
+
+.btn:hover{
+    background-color:var(--color-primary-500);
+    color: var(--color-light-grey);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.alert{
+    padding: 1rem;
+    font-weight: var(--fw-medium);
+    margin-bottom: 1rem;
+    border: transparent;
+    border-radius: 5px solid var(--color-black);
+}
+
+.alert-danger{
+    background-color: var(--color-red-50);
+    color: var(--color-red-800);
+}
+
+.alert-success{
+    background-color: var(--color-green-50);
+    color: var(--color-green-800);
+}
+
+.form{
+    background-color: var(--color-white);
+    width: var(--fluid-width);
+    max-width: var(--fixed-width);
+    margin-inline: 2rem auto;
+    border-radius: 5px solid black;
+    box-shadow: 5px black;
+    padding: 2rem;
+}
+
+.form-label{
+    display: block;
+    font-size: var(--fs-s);
+    font-weight: var(--fw-medium);
+    line-height: 1.25rem;
+}
+.form-row{
+    margin-block-end: 1rem;
+}
+
+.form-input, .form-textarea{
+    inline-size: 100%;
+    padding: 0.375rem 0.75rem;
+    background-color: var(--color-primary-300);
+    border: 1px solid var(--color-light-grey);
+    border-radius: 5%;
+    font-size: var(--fs-s);
+}
+
+.form-textarea{
+    min-height: 10em;
+}
+
+::placeholder{
+    /*Héritage de font*/
+    font-family: inherit;
+    color: var(--color-primary-300);
+
+}
+
+.btn-block{
+    inline-size: 100%;
+}
+
+.loading{
+    width: 3rem;
+    height: 3rem;
+    border: 5px solid var(--color-light-grey);
+    margin-inline: auto;
+    border-radius: 50%;
+    border-top-color: var(--color-primary-500);
+    animation: spin 1.6s linear infinite;
+}
+@keyframes spin{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.section{
+    padding-block: 5rem;
+
+}
+
+.title{
+    text-align: center;
+}
+.title > h2{
+    margin-block-end: 0.5em;
+}
+.title-underline{
+    background-color: var(--color-primary-500);
+    height: 0.25rem;
+    width: 11.5rem;
+    margin-inline: auto;
+}

@@ -1,0 +1,25 @@
+/** Les élément peuvent avoir ces propriétés par défaut : */
+/** BLOCK : Commence toujours sur une nouvelle ligne et prend toute la largeur */
+/** INLINE : Ne commence pas sur une nouvelle ligne et prend seulement la taille du contenu */
+
+.block {
+  background-color: blue;
+  color: #fff;
+  width: 300px;
+
+  /* version */
+  /* margin-left: auto;
+  margin-right: auto; */
+
+  /* raccourci */
+  margin-inline: auto;
+}
+
+/* body {
+    text-align: center;
+} */
+
+.inline {
+  background-color: red;
+  color: #fff;
+}

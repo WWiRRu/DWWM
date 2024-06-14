@@ -14,16 +14,16 @@
 - Créer un fichier CSS (ex: main.css, style.css, etc...)
 - Lier le CSS dans le HTML (dans l'élément `<head>`)
 
-## HTML (strucutre)
+## HTML (structure)
 
 - Créer une `<div>` avec les classes `card card-1`
 - Placer dedans :
   - Une `<div>` avec la classe `icon`
-  - Un titre `<h2>` avec la class `title`
-  - Un paragraphe `<p>` avec la classe `text`
-  - Un bouton `<button>` avec les classes `btn btn-pink`
+  - Un titre `<h2>` "Première carte" avec la class `title`
+  - Un paragraphe `<p>` avec la classe `text` et du lorem10
+  - Un bouton `<button>` "Se connecter" avec les classes `btn btn-pink`
 - Copier/coller 1 fois
-- Changer la classe `card-1` de la seconde `<div>` en `card-2`
+- Changer la classe `card-1` de la seconde `<div>` en `card-2` et le titre
 - Changer la classe `btn-pink` du second `<button>` en `btn-blue`
 
 ## CSS (styles)

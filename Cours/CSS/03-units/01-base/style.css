@@ -1,0 +1,87 @@
+/* 1 */
+/** PIXELS - Valeurs absolues, un point sur l'écran */
+/** FONT-SIZE - Taille de la police */
+/** WIDTH - Largeur d'un élément */
+/** HEIGHT - Hauteur d'un élément */
+
+h1 {
+  /* Valeur absolue - La taille sera la même, peut importe l'écran (pc, tablette, mobile) */
+  /* font-size: 60px;
+  background-color: blue;
+  color: white;
+  width: 200px;
+  height: 400px; */
+}
+
+/* 2 */
+/** POURCENTAGE - Unité relative. Dépend du parent */
+
+/* .inner {
+  width: 50%;
+  height: 50%;
+  background: red;
+}
+
+.outer {
+  width: 200px;
+  height: 200px;
+  background: green;
+} */
+
+/* 3 */
+/** em - Unité relative. Dépend du parent */
+/** 1em - valeur de base (16px) * nombre (1) = 16px */
+/** 2em - valeur de base (16px) * nombre (2) = 32px */
+/** 2em - valeur de base (10px) * nombre (2) = 20px */
+
+/* .absolute {
+  font-size: 32px;
+}
+
+.relative {
+  font-size: 2em;
+}
+
+div {
+  font-size: 10px;
+} */
+
+/* 4 */
+/** rem - Unité relative. Dépend de la racine <html> */
+/** 1rem = valeur de base (16px) * nombre (1) = 16px */
+
+/* .absolute {
+  font-size: 32px;
+}
+
+.relative {
+  font-size: 2rem;
+}
+
+html {
+  font-size: 10px;
+} */
+
+/* 5 */
+/** VIEWPORT */
+/** vh - viewport height - Pourcentage de l'écran */
+/** dvh - dynamic viewport height - Pourcentage de l'écran */
+/** vw - viewport width - Pourcentage de l'écran */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  background: green;
+  height: 100vh;
+  height: 100dvh;
+}
+
+.about {
+  background: blue;
+  height: 43vh;
+  width: 53vw;
+}

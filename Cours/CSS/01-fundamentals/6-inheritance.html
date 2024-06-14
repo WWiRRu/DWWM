@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Cours CSS</title>
+    <style>
+      /* Héritage */
+
+      /* Les enfants héritent du style des parents, sauf si ils ont leur propre style */
+      body {
+        color: red;
+      }
+
+      .special {
+        color: green;
+        font-size: 30px;
+      }
+
+      h2 {
+        color: blue;
+      }
+
+      div {
+        color: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Héritage</h1>
+
+    <!--  Un enfant de body -->
+    <div>
+      <!-- Un enfant de div et un descendant de body -->
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        Facilis cupiditate provident consequatur dolorum iure
+        recusandae in deserunt, unde at nihil incidunt perspiciatis
+        tenetur molestiae est ratione, rem velit quam rerum!
+      </p>
+      <p class="special">
+        Mollitia quia distinctio cumque nulla sint enim quis quasi at
+        repudiandae incidunt? Dignissimos dolorum ipsa veniam! Non
+        autem asperiores voluptates! Optio a corporis, similique
+        aliquam officia pariatur atque ea eaque.
+      </p>
+    </div>
+
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+      Facilis cupiditate provident consequatur dolorum iure recusandae
+      in deserunt, unde at nihil incidunt perspiciatis tenetur
+      molestiae est ratione, rem velit quam rerum!
+    </p>
+
+    <p>
+      Mollitia quia distinctio cumque nulla sint enim quis quasi at
+      repudiandae incidunt? Dignissimos dolorum ipsa veniam! Non autem
+      asperiores voluptates! Optio a corporis, similique aliquam
+      officia pariatur atque ea eaque.
+    </p>
+
+    <p class="special">
+      Quia sapiente molestias quasi nostrum possimus. Necessitatibus
+      hic provident tempore voluptas accusantium. Excepturi
+      consequuntur illum in quod autem tempore laudantium adipisci
+      harum asperiores, alias veritatis inventore pariatur! Officia,
+      perspiciatis ex.
+    </p>
+
+    <h2 class="heading" id="heading">Je suis un titre</h2>
+  </body>
+</html>

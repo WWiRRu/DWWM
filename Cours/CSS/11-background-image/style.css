@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div{
+    min-height: 100vh;
+    color: #fff;
+    outline: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.big-img{
+    background: url("./retro1.jpeg");
+    /**sert à fixer les images contre le scroll */
+    background-attachment: fixed;
+}
+
+.small-img{
+    background: url("./retro2.jpeg");
+    /**valeur par défaut  -  repeat*/
+    background-repeat: no-repeat;
+    /** background-repeat: repeat-x ou repeat-y;*/
+    /** background-repeat: space;*/
+    /** background-repeat: round;*/
+}
+
+.folder-img{
+    background: url("./img/retro3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /**background-size: contain;*/
+    background-position: center;
+    /**background-position: peut etre toutes les directions;*/
+    /**background-position: 50% 50%;*/
+
+
+    /*!RACCOURCI*/
+    /**Ordre*/
+    /**linear-gradient bg-color bg-image bg-repeat bg-attachement bg-position*/
+    background: linear-gradient(to top,rgba(0 0 0 / 0),rgba(255 255 255 / 1)), url(./img/retro3.jpg) no-repeat fixed center/cover;
+}

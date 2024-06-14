@@ -1,0 +1,11 @@
+h1{
+    /* Axe X - Axe Y - blur - color*/
+    text-shadow: 5px 5px 10px red;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    /* Axe X - Axe Y - blur - spread - color*/
+    box-shadow: 5px 5px 10px 5px rgb(233, 88, 88);
+}

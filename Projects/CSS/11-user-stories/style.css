@@ -1,0 +1,163 @@
+/*!Import fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/*! RESET */
+*{
+    /*Reset margins*/
+    margin: 0;
+    /*Reset paddings*/
+    padding: 0;
+    /*Border box box sizing*/
+    box-sizing: border-box;
+}
+
+:root{
+    /*Vars for font family*/
+    --ff-headings: "Ubuntu", sans-serif;
+    --ff-bodys: "Ubuntu", sans-serif;
+    /*Vars for font size*/
+    --fs-tiny: clamp(0.875rem, 1.5vw, 1.5rem);
+    --fs-xs: clamp(1rem, 2vw, 2rem);
+    --fs-s: clamp(1.25rem, 2.5vw, 2.5rem);
+    --fs-m: clamp(1.5rem, 3vw, 3rem);
+    --fs-l: clamp(2rem, 5vw, 5rem);
+    /*Vars for font weight*/
+    --fw-bold: 800;
+    --fw-medium: 600;
+    --fw-regular: 400;
+    /*Vars for primary colors*/
+    --color-primary: #344966;
+    --color-secondary: #0D1821;
+    --color-third: #B4CDED;
+    --color-fourth: #F0F4EF;
+    --color-fifth: #BFCC94;
+    --color-green: #77B28C;
+    /*Vars for the rest of the colors*/
+    --color-native-50: #fafafa;
+    --color-native-100: #f4f4f5;
+    --color-native-200: #e4e4e7;
+    --color-native-300: #d4d4d8;
+    --color-native-400: #a1a1aa;
+    --color-native-500: #71717a;
+    --color-native-600: #52525b;
+    --color-native-700: #3f3f46;
+    --color-native-800: #27272a;
+    --color-native-900: #18181b;
+    --color-native-950: #09090b;
+    /*Vars for line-height*/
+    --lh: 1.5;
+    /*Vars for border*/
+    --border-regular: 1.50px solid var(--color-secondary);
+}
+
+body{
+    font-family: var(--ff-bodys);
+    font-weight: var(--fw-regular);
+    line-height: var(--lh);
+    font-size: var(--fs-body);
+    background-color: var(--color-fourth);
+    color: var(--color-secondary);
+    margin: 1.5rem;
+}
+
+#title{
+    font-family: var(--ff-headings);
+    font-size: var(--fs-m);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    margin-block-end: 0.5em
+}
+#title-underline{
+    background-color: var(--color-secondary);
+    height: 0.25rem;
+    width: 50%;
+    max-width: 7rem;
+    margin-inline: auto;
+}
+#description{
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-tiny);
+    margin-top: 4rem;
+    text-align: center;
+}
+/* .image{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+#survey-form{
+    background-color: var(--color-native-100);
+    width: var(--fluid-width);
+    max-width: var(--fixed-width);
+    margin-inline: auto;
+    max-width: 65%;
+    padding: 1.5rem;
+    border: var(--border-regular);
+    border-radius: 16px;
+    max-width: 100%;
+    box-shadow: 5px 5px 2px var(--color-native-950);
+}
+#survey-form > legend{
+    font-weight: var(--fw-regular);
+    color: #77B28C;
+}
+#survey-form > input{
+    display: block;
+    max-width: 100%;
+    border: var(--border-regular);
+    border-radius: 5px;
+    padding: 0.25rem;
+    margin-block-end: 0.75rem;
+}
+fieldset > legend{
+    color: #77B28C;
+}
+#survey-form > label{
+    inline-size: 100%;
+    color: #77B28C;
+}
+#survey-form > textarea{
+    display: block;
+    border: var(--border-regular);
+    border-radius: 5px;
+    max-width: 100%;
+    inline-size: 100%;
+    padding: 0.25rem;
+    margin-block-end: 0.75rem;
+}
+#survey-form > select{
+    display: block;
+    inline-size: 100%;
+    border: var(--border-regular);
+    border-radius: 5px;
+    margin-block-end: 0.75rem;
+}
+#survey-form > button{
+    display: block;
+    cursor: pointer;
+    margin-block-start: 2rem;
+    border: var(--border-regular);
+    border-radius: 5px;
+    background-color: var(--color-fourth);
+    height: 2rem;
+    width: 5rem;
+    transition: all 1s linear;
+}
+#survey-form > button:hover{
+    background-color: var(--color-third);
+    color: var(--color-native-100);
+}
+#survey-form > fieldset{
+    border: var(--border-regular);
+    border-radius: 5px;
+    padding-bottom: 1rem;
+    padding-inline: 1.5rem;
+}
+fieldset > input{
+    margin-inline: 0.5rem;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cours CSS</title>
+    <style>
+      /* La dernière règle et spécificité */
+      /* id > class > tag > * */
+
+      .text {
+        color: green;
+      }
+
+      p {
+        color: red;
+      }
+
+      p {
+        color: blue;
+      }
+
+      h1 {
+        color: blue;
+      }
+
+      #heading {
+        color: red;
+      }
+
+      .title {
+        color: cornflowerblue;
+      }
+
+      /* Le moins spécifique */
+      * {
+        color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="heading" class="title">Je suis un titre</h1>
+    <p class="text">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus eos,
+      veniam repellendus dolore tempora ipsa voluptatem minus? Non pariatur
+      voluptatibus, sit eum ad, tenetur, reiciendis cumque veniam nostrum
+      consequuntur tempore?
+    </p>
+    <p class="text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat velit
+      eaque vitae culpa deserunt beatae, porro, aspernatur voluptas at facere
+      optio odit cumque nulla recusandae dignissimos, sequi deleniti omnis qui!
+    </p>
+  </body>
+</html>

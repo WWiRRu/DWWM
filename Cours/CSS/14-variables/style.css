@@ -1,0 +1,32 @@
+/** Variables CSS a.k.a Propriétés customisées */
+/** Retient une valeur pour la réutiliser */
+/** --varName: value */
+/** scope */
+/** :root{} === global */
+/** N'importe quelle propriété */
+
+:root{
+    --primaryColor: #7E7E7E;
+    --secondaryColor: #f15025;
+    --mainTransition: all 1.2s linear;
+}
+
+.heading{
+    color: var(--primaryColor);
+}
+.text{
+    color: red;
+}
+.main-text{
+    color: red;
+}
+.second-heading{
+    color:var(--secondaryColor);
+    transition: var(--mainTransition);
+}
+.second-heading:hover{
+    color: var(--primaryColor);
+}
+.third-heading{
+    color:red;
+}

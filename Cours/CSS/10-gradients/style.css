@@ -1,0 +1,38 @@
+div{
+    width: 95%;
+    height: 10rem;
+    margin: 1rem;
+}
+
+/*dégradé linéaire*/
+.one{
+    /*direction par défaut - du haut vers le bas*/
+    background: linear-gradient(black,white);
+    /*"to (direction)" pour changer la direction*/
+    background: linear-gradient(to right, black, white);
+}
+
+.two{
+    /*ajouter le nombre de couleurs qu'on veut*/
+    background: linear-gradient(to right, #292f56,#28345d,#263963,#233e6a,#1f4370,#194876,#104e7c,#005382,#005987,#005e8d,#006491,#006994,#006f96,#007498,#00799a,#007f9c,#00849e,#00899f,#008fa1,#0094a2,#009aa3,#009fa4,#00a5a4,#00aba4,#00b0a4,#00b6a3,#00bca1,#00c39e,#00c89b,#00cd98,#00d295,#1cd791,#38dc8d,#4de189,#5ee584,#6fea80,#7eee7c,#8ef278,#9df674,#acfa70);
+}
+
+.three{
+    /*ajuster de ou commence le dégradé grace aux degrès*/
+    background: linear-gradient(300deg, red, green);
+}
+.four{
+    /*ajuster de ou commence le dégradé grace aux to*/
+    background: linear-gradient(to top left, red, green);
+}
+.five{
+    /*dire a combien de pourcentage commence le dégradé*/
+    background: linear-gradient(blue 30%, yellow);
+}
+.six{
+    /*pouvoir mettre plusieurs fois la même couleur*/
+    background: linear-gradient(rgba(0 0 0 / 1), rgba(0 0 0 / 0));
+}
+.seven{
+    background: radial-gradient(darkred, crimson, darkorange, gold, bisque);
+}

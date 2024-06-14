@@ -2,16 +2,16 @@
 
 ## Setup
 
-- Créer un fichier (`03-css-fundamentals-project`)
-- Créer `index.html` (structure générale - emmet !)
+- Créer un dossier (`01-css-fundamentals-project`)
+- Créer un fichier `index.html` (structure générale - emmet !)
 - Créer un fichier CSS (ex: main, styles, etc...)
 - Lier le CSS dans le HTML (dans élément `<head>`)
 
 ## HTML (structure)
 
-- Une `<div>` avec la classe `"container"`
-- Dans la div :
-  - Une `span` avec une classe `"icon"` qui contient un nombre
+- Une `<div>` avec une classe `"container"`
+- Dans la `<div>` :
+  - Une `span` avec une classe `"icon"` contenant un nombre
   - Un `<h2>` avec un id `"first"`
   - Un `<p>` avec du lorem (lorem10)
 - Ajouter les commentaires pour délimiter début/fin de la `<div>`

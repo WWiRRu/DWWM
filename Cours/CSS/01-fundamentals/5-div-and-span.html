@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cours CSS</title>
+    <style>
+      /* <div> and <span> - Utilisées pour grouper */
+
+      /* <div> - Utilisée pour grouper plusieurs élements */
+      div {
+        color: red;
+        background-color: black;
+      }
+
+      /* Le problème avec 2 DIVs c'est qu'elles ont le même style  */
+      /* C'est là qu'on utilise les classes  */
+      .green {
+        color: green;
+        background-color: yellow;
+      }
+
+      .red {
+        color: red;
+        border-color: black;
+      }
+
+      /** <span> - Utilisée pour grouper du contenu inline (en ligne) */
+      span {
+        text-transform: uppercase;
+      }
+
+      .text {
+        color: blue;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="red">
+      <h3>Titre 1</h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima,
+        facilis nisi accusamus veniam quos totam ut quisquam obcaecati esse,
+        corporis error ullam modi ab sunt reprehenderit saepe impedit earum
+        <span class="text">je suis en majuscule</span> labore quod eos
+        consectetur accusantium nesciunt! Ab illum cumque ipsum? Earum aperiam
+        voluptates vitae ad rerum vel a cupiditate dolorem tempora.
+      </p>
+    </div>
+
+    <div class="green">
+      <h3>Titre 2</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ullam
+        ratione sequi vel ex maxime asperiores nulla! Saepe, odit reiciendis
+        culpa minima perspiciatis voluptatum tempora sit iste quasi quis illum
+        sapiente assumenda atque distinctio
+        <span class="text">je suis en majuscule</span> blanditiis! Ipsa enim
+        repudiandae repellendus eum dolores eos consequuntur sapiente doloremque
+        veritatis facere, accusamus, laudantium quisquam!
+      </p>
+      <h4>Hello World</h4>
+    </div>
+  </body>
+</html>

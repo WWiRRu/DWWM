@@ -1,0 +1,45 @@
+/* 1 */
+/** display: inline-block */
+/** Ne commence pas une nouvelle ligne mais le navigateur respecte les props margin, width, height */
+
+a {
+  font-size: 1.5rem;
+  background-color: red;
+  width: 70px;
+  height: 50px;
+  margin: 40px 10px;
+
+  display: inline-block;
+}
+
+/* 2 */
+div {
+  background-color: #f15025;
+  margin: 10px;
+  color: white;
+  font-size: 1.5rem;
+}
+
+/** display: none - Supprime du flux du document, cache l'élément et enlève les espaces */
+
+.none {
+  display: none;
+}
+
+/** opacity: 0, visibility: hidden - cache l'élément et préserve les espaces */
+
+.opacity-1 {
+  opacity: 1;
+}
+
+.opacity-5 {
+  opacity: 0.5;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.visibility {
+  visibility: hidden;
+}
