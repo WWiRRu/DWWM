@@ -1,0 +1,11 @@
+CTRL + J ou ù pour ouvrir le terminal dans Visual Studio Code
+
+code -r <fichier à ouvrir sur Visual Studio Code> = Ouvrir un fichier dans Visual Studio Code
+
+cd <chemin d'accès vers le dossier> = Permet d'accèder a un dossier
+mkdir <chemin d'accès vers le dossier> = Créer un dossier
+ni <chemin d'accès vers le fichier> = Créer un fichier
+rmdir <chemin d'accès vers le dossier> = Supprimer un dossier
+rm <chemin d'accès vers le fichier> = Supprimer un fichier
+cp <chemin d'accès vers le fichier> <chemin d'accès vers ou le copier> = Copier un fichier
+mv <chemin d'accès vers le fichier> <chemin d'accès vers ou le déplacer> = Déplacer un fichier
