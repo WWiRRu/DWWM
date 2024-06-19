@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bonus Flex Box</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav class="navbar">
+      <div class="nav-center">
+        <div class="nav-header">
+          <img src="./imgs/logo.svg" class="nav-logo" alt="" />
+          <button type="button" class="nav-toggle" id="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li>
+            <a href="#home" class="nav-link scroll-link">Acceuil</a>
+          </li>
+          <li>
+            <a href="#about" class="nav-link scroll-link">à propos</a>
+          </li>
+          <li>
+            <a href="#services" class="nav-link scroll-link">Services</a>
+          </li>
+          <li>
+            <a href="#featured" class="nav-link scroll-link">En Vedette</a>
+          </li>
+          <li>
+            <a href="#gallery" class="nav-link scroll-link">galerie</a>
+          </li>
+        </ul>
+        <ul class="nav-icons">
+          <li>
+            <a href="https://twitter.com" target="_blank" class="nav-icon"
+              ><i class="fab fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://facebook.com" target="_blank" class="nav-icon"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://instagram.com" target="_blank" class="nav-icon"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-banner">
+        <h1 class="hero-title">Continuez à explorer</h1>
+        <p class="hero-text">
+          Découvrez des destinations uniques et vivez des aventures inoubliables
+          avec nos tours personnalisés.
+        </p>
+        <a class="btn hero-btn scroll-link" href="#travels"
+          >Explorer les Voyages</a
+        >
+      </div>
+    </section>
+
+    <section class="about">
+      <h1 class="about-title">
+        à propos <span class="about-span">de nous</span>
+      </h1>
+      <div class="about-center">
+        <div class="about-image">
+          <img src="./imgs/about.jpeg" alt="Image of beach" />
+        </div>
+        <div class="about-content">
+          <h3 class="about-text-title">Explorez la différence</h3>
+          <p class="about-text">
+            Nous sommes dédiés à offrir des expériences de voyage
+            exceptionnelles et personnalisées. Que ce soit pour une aventure en
+            montagne ou une détente sur la plage, nous avons le tour parfait
+            pour vous.
+          </p>
+          <p class="about-text2">
+            Notre équipe d'experts locaux vous guidera à travers des paysages
+            époustouflants et des cultures fascinantes, en s'assurant que chaque
+            moment de votre voyage soit mémorable.
+          </p>
+          <a href="#hero" class="btn about-btn">En savoir plus</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="services-title">
+        <h2>nos <span>services</span></h2>
+      </div>
+      <div class="services-center">
+        <article class="service">
+          <span class="service-icon">
+            <i class="fas fa-wallet fa-fw"></i>
+          </span>
+          <div class="service-info">
+            <h4 class="service-title">Économiser de l'argent</h4>
+            <p class="service-text">
+              Nous proposons des offres avantageuses pour vous permettre de
+              voyager sans vous ruiner.
+            </p>
+          </div>
+        </article>
+        <article class="service">
+          <span class="service-icon">
+            <i class="fas fa-tree fa-fw"></i>
+          </span>
+          <div class="service-info">
+            <h4 class="service-title">Randonnées infinies</h4>
+            <p class="service-text">
+              Découvrez des sentiers de randonnée époustouflants et profitez de
+              la nature à son meilleur.
+            </p>
+          </div>
+        </article>
+        <article class="service">
+          <span class="service-icon">
+            <i class="fas fa-socks fa-fw"></i>
+          </span>
+          <div class="service-info">
+            <h4 class="service-title">Confort exceptionnel</h4>
+            <p class="service-text">
+              Nos tours sont conçus pour offrir un maximum de confort et de
+              commodité à chaque étape de votre voyage.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </body>
+</html>
