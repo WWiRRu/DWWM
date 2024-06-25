@@ -459,6 +459,7 @@ p {
 }
 
 .gallery-img {
+  width: 100%;
   block-size: 17rem;
   transition: var(--transition);
 }
