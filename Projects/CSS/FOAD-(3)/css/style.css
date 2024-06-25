@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2eae2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+}
+
+.card {
+  margin-inline: 1rem;
+  width: 343px;
+  height: 611px;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+}
+.card > #mobile-image {
+  height: 348px;
+  object-fit: cover;
+}
+.card-body {
+  margin-inline: 1.5rem;
+}
+.pricings {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+}
+#card-pricing {
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  color: #3d8168;
+  font-weight: 900;
+}
+#card-pricing2 {
+  text-decoration: line-through;
+}
+
+@media screen and (max-width: 776px) {
+  .card > #desktop-image {
+    display: none;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+  #perfume {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-size: 14px;
+  }
+  #card-title {
+    color: #1c232b;
+    font-family: "Fraunces", serif;
+    margin-bottom: 1rem;
+    font-size: 32px;
+  }
+  #card-p {
+    font-size: 14px;
+    font-weight: 24px;
+    margin-bottom: 1.5rem;
+    color: #6c7289;
+  }
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 295px;
+    height: 48px;
+    margin-block-end: 1.5rem;
+    border-radius: 8px;
+    background-color: #3d8168;
+  }
+}
+@media screen and (min-width: 776px) {
+  .card > #mobile-image {
+    display: none;
+  }
+  .card {
+    margin-inline: 1rem;
+    width: 600px;
+    height: 450px;
+    display: flex;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+  .card > #desktop-image {
+    height: 450px;
+    width: 337px;
+    object-fit: cover;
+  }
+  .card-body {
+    margin-block-start: 2rem;
+    margin-inline-start: 1.5rem;
+  }
+  #perfume {
+    margin-bottom: 1.25rem;
+    font-size: 14px;
+  }
+  #card-title {
+    color: #1c232b;
+    font-family: "Fraunces", serif;
+    margin-bottom: 1.5rem;
+    font-size: 32px;
+    margin-right: 2rem;
+  }
+  #card-p {
+    font-size: 14px;
+    font-weight: 24px;
+    margin-right: 2rem;
+    margin-bottom: 1.115384615rem;
+    color: #6c7289;
+  }
+  .button {
+    margin-top: 1.153846154rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    width: 236px;
+    cursor: pointer;
+    height: 48px;
+    margin-block-end: 1.5rem;
+    border-radius: 8px;
+    background-color: #3d8168;
+    transition: all 0.3s linear;
+  }
+  .button:hover {
+    background-color: #1a4032;
+  }
+}
