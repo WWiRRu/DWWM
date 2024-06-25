@@ -389,7 +389,7 @@ Hero
 @media screen and (min-width: 768px) {
   .hero {
     background: linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7)),
-      url("../images/main.jpeg") no-repeat center/cover fixed;
+      url("./images/main.jpeg") no-repeat center/cover fixed;
   }
 
   .hero-banner {
