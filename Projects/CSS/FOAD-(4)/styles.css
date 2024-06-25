@@ -346,13 +346,13 @@ p {
     flex-wrap: wrap;
   }
   .service {
-    flex: 0 0 50%;
+    flex: 0 0 calc(50% - 0.5rem);
     margin-block-end: 1rem;
   }
 }
 @media screen and (min-width: 992px) {
   .service {
-    flex: 0 0 33.333333%;
+    flex: 0 0 calc(33.333333% - 1rem);
   }
 }
 @media screen and (min-width: 1170px) {
@@ -382,6 +382,7 @@ p {
   position: relative;
 }
 .tour-img {
+  width: 100%;
   block-size: 15rem;
 }
 .tour-date {
@@ -439,4 +440,86 @@ p {
   .tour-card {
     flex: 0 0 calc(33.333% - 2rem);
   }
+}
+.gallery-img-container {
+  position: relative;
+  background: var(--clr-primary-5);
+}
+
+.gallery-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+  color: var(--clr-white);
+  opacity: 0;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.gallery-img {
+  block-size: 17rem;
+  transition: var(--transition);
+}
+
+.gallery-img-container:hover .gallery-img {
+  opacity: 0.5;
+}
+
+.gallery-img-container:hover .gallery-icon {
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery-center {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .gallery-img-container {
+    flex: 1 1 50%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .gallery-img-container {
+    flex: 1 1 25%;
+  }
+}
+.section-footer {
+  background-color: var(--clr-grey-1);
+  text-align: center;
+  padding-inline: 2rem;
+}
+.footer-links,
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  margin-block-end: 1.5rem;
+  flex-wrap: wrap;
+}
+.footer-link {
+  color: var(--clr-white);
+  text-transform: capitalize;
+  font-size: 1rem;
+  margin-inline-end: 1rem;
+  letter-spacing: var(--spacing);
+  transition: var(--transition);
+}
+.footer-link:hover {
+  color: var(--clr-primary-4);
+}
+.footer-icon {
+  font-size: 2rem;
+  margin-inline-end: 1rem;
+  color: var(--clr-primary-8);
+  transition: var(--transition);
+}
+.footer-icon:hover {
+  color: var(--clr-primary-4);
+}
+.copyright {
+  margin-inline: auto;
+  color: var(--clr-white);
 }
