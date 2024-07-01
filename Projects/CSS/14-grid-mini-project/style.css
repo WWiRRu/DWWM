@@ -1,0 +1,409 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&display=swap");
+
+/*
+==========
+Variables
+==========
+*/
+:root {
+  --primaryColor: #f15025;
+  --mainBlack: #222;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --darkGrey: #afafaf;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 0.05em;
+  --fluid-width: 95vw;
+  --max-width: 1170px;
+}
+
+/*
+==========
+Style Global
+==========
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fira Code", monospace;
+  color: var(--mainBlack);
+  background: var(--mainWhite);
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-inline-size: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+  line-height: 1;
+  letter-spacing: var(--mainSpacing);
+  margin-block-end: 1.25rem;
+}
+
+h1 {
+  margin-block-start: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+  margin-block-end: 0;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+p {
+  text-wrap: pretty;
+  font-size: 0.7rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 3px solid var(--primaryColor);
+  color: var(--primaryColor);
+  margin: 3rem;
+  transition: var(--mainTransition);
+}
+
+.btn:hover {
+  background: var(--primaryColor);
+  color: var(--mainWhite);
+}
+
+/*
+==========
+Navbar
+==========
+*/
+.main-navbar {
+  background: var(--darkGrey);
+  padding-inline: 2rem;
+}
+
+.nav-link {
+  display: block;
+  padding: 1rem 0;
+  color: var(--primaryColor);
+  letter-spacing: var(--mainSpacing);
+  transition: var(--mainTransition);
+}
+
+@media screen and (min-width: 992px) {
+  .nav-links {
+    max-width: var(--max-width);
+    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .nav-link {
+    text-align: center;
+  }
+}
+
+.nav-link:hover {
+  color: var(--mainBlack);
+}
+
+/*
+==========
+Hero
+==========
+*/
+.hero-header {
+  min-block-size: 100dvh;
+  background: var(--primaryColor);
+  color: var(--mainWhite);
+  display: grid;
+  place-items: center;
+}
+
+.hero-text {
+  font-size: 1rem;
+  max-width: 66ch;
+}
+
+@media screen and (max-width: 992px) {
+  .hero-banner {
+    padding-inline: 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-header {
+    background:
+      linear-gradient(rgba(241, 80, 37, 0.75), rgba(0, 0, 0, 0.75)),
+      url("./imgs/image-2.jpeg") no-repeat center/cover fixed;
+  }
+
+  .hero-title {
+    font-size: 4rem;
+  }
+}
+
+/*
+==========
+Cards
+==========
+*/
+.cards {
+  padding-block: 4rem;
+}
+
+.title {
+  text-align: center;
+}
+
+.cards-center {
+  inline-size: var(--fluid-width);
+  max-inline-size: var(--max-width);
+  margin: 2rem auto;
+}
+
+.card {
+  border: 1px solid var(--darkGrey);
+  margin-block-end: 3rem;
+}
+
+.card-info {
+  padding: 1rem;
+}
+
+.card-footer {
+  background: var(--darkGrey);
+  padding: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+
+.card-icon {
+  color: var(--primaryColor);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+.cards-center {
+  display: grid;
+  column-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
+}
+
+/*
+==========
+Tiles
+==========
+*/
+.tiles {
+  padding-block: 4rem;
+}
+
+.tiles-center {
+  inline-size: var(--fluid-width);
+  max-inline-size: var(--max-width);
+  margin-inline: auto;
+  display: grid;
+  row-gap: 2rem;
+}
+
+@media screen and (min-width: 576px) {
+  .tiles-center {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .tiles-center {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .tiles-center {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 200px);
+    grid-template-areas:
+      "a a a b"
+      "a a a c"
+      "d d d d"
+      "e f f f"
+      "e g h i";
+  }
+
+  .tiles img {
+    inline-size: 100%;
+    block-size: 100%;
+  }
+
+  .tile-1 {
+    grid-area: a;
+  }
+
+  .tile-2 {
+    grid-area: b;
+  }
+
+  .tile-3 {
+    grid-area: c;
+  }
+
+  .tile-4 {
+    grid-area: d;
+  }
+
+  .tile-5 {
+    grid-area: e;
+  }
+
+  .tile-6 {
+    grid-area: f;
+  }
+
+  .tile-7 {
+    grid-area: g;
+  }
+
+  .tile-8 {
+    grid-area: h;
+  }
+
+  .tile-9 {
+    grid-area: i;
+  }
+}
+
+/*
+==========
+Layout
+==========
+*/
+.header {
+  background: var(--primaryColor);
+  color: var(--mainWhite);
+  text-align: center;
+  padding-block: 0.5rem;
+}
+
+.navbar {
+  background: var(--darkGrey);
+}
+
+.navbar .nav-link {
+  display: inline-block;
+  padding: 1rem;
+  color: var(--mainBlack);
+  letter-spacing: var(--mainSpacing);
+  font-size: 1.1rem;
+  transition: var(--mainTransition);
+}
+
+.navbar .nav-link:hover {
+  color: var(--mainWhite);
+}
+
+.content {
+  padding: 2rem;
+}
+
+.content p {
+  font-size: 1rem;
+}
+
+.sidebar {
+  background: var(--primaryColor);
+  padding-block: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  color: var(--mainWhite);
+  font-size: 1.2rem;
+}
+
+.footer {
+  background: var(--mainBlack);
+  padding-block: 0.5rem;
+  color: var(--offWhite);
+  text-align: center;
+}
+
+.footer p {
+  font-size: 1.2rem;
+  margin-inline: auto;
+}
+
+.main {
+  min-block-size: 100dvh;
+  display: grid;
+  grid-template-rows: auto auto 1fr auto auto;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .main {
+    grid-template-columns: 200px 1fr 50px;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+      "header header header"
+      "navbar content sidebar"
+      "footer footer footer";
+  }
+
+  .header {
+    grid-area: header;
+  }
+
+  .navbar {
+    grid-template-columns: 1fr;
+    min-block-size: 100%;
+    align-items: center;
+    grid-area: navbar;
+  }
+
+  .content {
+    grid-area: content;
+  }
+
+  .footer {
+    grid-area: footer;
+  }
+
+  .sidebar {
+    grid-template-columns: 1fr;
+    align-items: center;
+    background: var(--darkGrey);
+    grid-area: sidebar;
+  }
+}
