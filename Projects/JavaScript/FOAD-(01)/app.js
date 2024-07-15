@@ -1,5 +1,4 @@
 const CHOICES  = ['pierre', 'feuille', 'ciseaux'];
-
 function getComputerChoice() {
     return CHOICES[Math.floor(Math.random() * CHOICES.length)];
 }
@@ -12,22 +11,18 @@ function getHumanChoice() {
     choice = choice.toLowerCase();
     return choice;
 }
-
 let humanScore = 0;
 let computerScore = 0;
-
 function playRound(humanChoice, computerChoice) {
     humanChoice = humanChoice.toLowerCase();
     if (humanChoice === computerChoice) {
         return `Égalité! Vous avez tous les deux choisi ${humanChoice}.`;
     }
-
     const winConditions = {
         pierre: 'ciseaux',
         feuille: 'pierre',
         ciseaux: 'feuille'
     };
-
     if (computerChoice === winConditions[humanChoice]) {
         humanScore++;
         return `Gagné! ${humanChoice.charAt(0).toUpperCase() + humanChoice.slice(1)} bat ${computerChoice}.`;
@@ -36,7 +31,6 @@ function playRound(humanChoice, computerChoice) {
         return `Perdu! ${computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1)} bat ${humanChoice}.`;
     }
 }
-
 function playGame() {
     for (let i = 0; i < 5; i++) {
         const humanChoice = getHumanChoice();
@@ -48,7 +42,6 @@ function playGame() {
         console.log(playRound(humanChoice, computerChoice));
         console.log(`Score - Humain: ${humanScore}, Ordinateur: ${computerScore}`);
     }
-
     if (humanScore > computerScore) {
         console.log('Félicitations! Vous avez gagné la partie.');
     } else if (humanScore < computerScore) {
@@ -57,5 +50,4 @@ function playGame() {
         console.log('La partie se termine par une égalité.');
     }
 }
-
 playGame();
