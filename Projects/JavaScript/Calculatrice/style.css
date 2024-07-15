@@ -1,0 +1,155 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f3f3f3;
+    font-family: 'Arial', sans-serif;
+}
+
+#calculator {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+    width: 300px;
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    text-align: right;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#buttons {
+    display: grid;
+    grid-template-areas:
+    "7 8 9 addition"
+    "4 5 6 soustraction"
+    "1 2 3 multiply"
+    "dot 0 delete divide"
+    "equals equals equals equals";
+    gap: 0.5rem;
+}
+#1{
+    grid-area: 1;
+}
+#2{
+    grid-area: 2;
+}
+#3{
+    grid-area: 3;
+}
+#4{
+    grid-area: 4;
+}
+#5{
+    grid-area: 5;
+}
+#6{
+    grid-area: 6;
+}
+#7{
+    grid-area: 7;
+}
+#8{
+    grid-area: 8;
+}
+#9{
+    grid-area: 9;
+}
+#0{
+    grid-area: 0;
+}
+#addition{
+    grid-area: addition;
+}
+#soustraction{
+    grid-area: soustraction;
+}
+#multiply{
+    grid-area: multiply;
+}
+#divide{
+    grid-area: divide;
+}
+#dot{
+    grid-area: dot;
+}
+#equals{
+    grid-area: equals;
+}
+#delete{
+    grid-area: delete;
+}
+
+.boutton {
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.number-btn {
+    background-color: #007bff;
+    transition: all 0.3s linear;
+}
+.number-btn:hover {
+    background-color: #0050a8;
+}
+.addition-btn{
+    background-color: #01bf30;
+    transition: all 0.3s linear;
+}
+.addition-btn:hover{
+    background-color: #00751e;
+}
+.erase-btn {
+    background-color: #dc3545;
+    transition: all 0.3s linear;
+}
+.erase-btn:hover {
+    background-color: #8f242f;
+}
+
+.equals-btn {
+    background-color: #28a745;
+    grid-column: span 2;
+    transition: all 0.3s linear;
+}
+.equals-btn:hover {
+    background-color: #175c24;
+}
+
+.multiply-btn, .divide-btn {
+    background-color: #ffc107;
+    transition: all 0.3s linear;
+}
+.multiply-btn:hover, .divide-btn:hover {
+    background-color: #9e7709;
+}
+.dot-btn{
+    background-color: #6c757d;
+    transition: all 0.3s linear;
+}
+.dot-btn:hover{
+    background-color: #4f5053;
+}
+@keyframes click {
+    50% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.boutton:active {
+    animation: click 0.2s;
+}
