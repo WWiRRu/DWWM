@@ -1,45 +1,53 @@
 /*!Colors*/
 body {
-  background-color: rgb(255, 127, 255);
+    background-color: rgb(255, 127, 255);
 }
+
 /*!Colors name*/
 #one {
-  /**CTRL + Space = suggestion list*/
-  color: white;
-  background-color: black;
+    /**CTRL + Space = suggestion list*/
+    color: white;
+    background-color: black;
 }
+
 #two {
-  color: red;
-  /**Shortcut from background-color*/
-  background: yellow;
+    color: red;
+    /**Shortcut from background-color*/
+    background: yellow;
 }
+
 /*!RGB - Red Green Blue 0 to 255*/
 #three {
-  color: rgb(255, 127, 255);
-  background-color: rgb(0, 0, 0);
+    color: rgb(255, 127, 255);
+    background-color: rgb(0, 0, 0);
 }
+
 #four {
-  color: rgb(0, 255, 0);
-  background: rgb(255, 255, 255);
+    color: rgb(0, 255, 0);
+    background: rgb(255, 255, 255);
 }
+
 #five {
-  color: rgb(0, 0, 255);
-  background: rgb(125, 125, 125);
+    color: rgb(0, 0, 255);
+    background: rgb(125, 125, 125);
 }
+
 /*!RGBA A - Opacity/Transparancy 0 to 1.0*/
 #six {
-  color: rgba(0, 255, 0, 0.5);
-  /**Other syntax method for RGBA*/
-  background: rgba(0 0 0 / 0.2);
+    color: rgba(0, 255, 0, 0.5);
+    /**Other syntax method for RGBA*/
+    background: rgba(0 0 0 / 0.2);
 }
+
 /*!HEX Codes*/
 /*!0123456789 A(10) B(11) C(12) D(13) E(14) F(15)*/
 #seven {
-  /**#(00) = red #00(00) green #0000(00) blue*/
-  color: #ff0000;
-  background: #fff;
+    /**#(00) = red #00(00) green #0000(00) blue*/
+    color: #ff0000;
+    background: #fff;
 }
+
 #eight {
-  color: #0000fffb;
-  background: #f15025;
+    color: #0000fffb;
+    background: #f15025;
 }

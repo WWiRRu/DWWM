@@ -12,7 +12,7 @@
 - Créer un `<h1>`
 - Créer un `<p>` avec du lorem
 - Créer une div avec la classe `"container"` et dedans, placer
-  - Un `<h2>` et un `<p>` avec du lorem
+    - Un `<h2>` et un `<p>` avec du lorem
 
 ## CSS (styles)
 

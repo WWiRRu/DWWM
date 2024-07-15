@@ -5,14 +5,14 @@
 
 
 const people = [
-    {name: "bob", age:20, job: "developpeur"},
-{name: "peter", age:25, job: "designer"},
-{name: "susy", age:30, job: "la boss"},
+    {name: "bob", age: 20, job: "developpeur"},
+    {name: "peter", age: 25, job: "designer"},
+    {name: "susy", age: 30, job: "la boss"},
 ];
 
 const youngPeople = people.filter(function (person) {
     console.log(person.age <= 25);
- return person.age <= 25;
+    return person.age <= 25;
 });
 
 console.log(youngPeople);

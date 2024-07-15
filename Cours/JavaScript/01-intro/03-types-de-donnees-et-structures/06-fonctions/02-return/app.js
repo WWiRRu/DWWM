@@ -5,16 +5,17 @@
 
 const wallheight = 80;
 
-function calculate(value){
+function calculate(value) {
 // const result = value * 2.54;
 // console.log(`La valeur en cm est : ${result} cm`);
 // return result;
 // raccourci
-return value * 2.54;
+    return value * 2.54;
 
 //! le code ne s'execute pas apres un return (il est ignore)
-console.log("hello");
+    console.log("hello");
 }
+
 const width = calculate(100);
 const height = calculate(wallheight);
 

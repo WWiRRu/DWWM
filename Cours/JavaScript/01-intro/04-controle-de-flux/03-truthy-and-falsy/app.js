@@ -11,7 +11,6 @@ const text = "john";
 
 if (text) {
     console.log("hey la valeur est vraie");
-}
-else {
+} else {
     console.log("hey la valeur est fausse");
 }

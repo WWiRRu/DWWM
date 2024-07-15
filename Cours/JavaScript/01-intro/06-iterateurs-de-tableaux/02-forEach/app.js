@@ -8,12 +8,12 @@ numbers.forEach(function (num) {
 })
 
 const people = [
-    {name: "bob", age:20, job: "developpeur"},
-{name: "peter", age:25, job: "designer"},
-{name: "susy", age:30, job: "la boss"},
+    {name: "bob", age: 20, job: "developpeur"},
+    {name: "peter", age: 25, job: "designer"},
+    {name: "susy", age: 30, job: "la boss"},
 ];
 
-people.forEach(function (person){
+people.forEach(function (person) {
     console.log(person);
     console.log(person.job.toUpperCase());
 });

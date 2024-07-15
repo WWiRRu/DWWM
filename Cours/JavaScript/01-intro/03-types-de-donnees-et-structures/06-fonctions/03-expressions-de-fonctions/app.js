@@ -1,6 +1,6 @@
 // declaration/definition de fonction
-function addvalues(num1, num2){
-return num1 + num2;
+function addvalues(num1, num2) {
+    return num1 + num2;
 }
 
 const firstValue = addvalues(3, 4);
@@ -12,7 +12,7 @@ console.log(secondValue);
 
 // expression d'une fonction
 
-const add = function(num1, num2){
+const add = function (num1, num2) {
     return num1 + num2;
 };
 

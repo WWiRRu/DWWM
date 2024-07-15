@@ -5,12 +5,12 @@
 /** HEIGHT - Hauteur d'un élément */
 
 h1 {
-  /* Valeur absolue - La taille sera la même, peut importe l'écran (pc, tablette, mobile) */
-  /* font-size: 60px;
-  background-color: blue;
-  color: white;
-  width: 200px;
-  height: 400px; */
+    /* Valeur absolue - La taille sera la même, peut importe l'écran (pc, tablette, mobile) */
+    /* font-size: 60px;
+    background-color: blue;
+    color: white;
+    width: 200px;
+    height: 400px; */
 }
 
 /* 2 */
@@ -69,19 +69,19 @@ html {
 /** vw - viewport width - Pourcentage de l'écran */
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .hero {
-  background: green;
-  height: 100vh;
-  height: 100dvh;
+    background: green;
+    height: 100vh;
+    height: 100dvh;
 }
 
 .about {
-  background: blue;
-  height: 43vh;
-  width: 53vw;
+    background: blue;
+    height: 43vh;
+    width: 53vw;
 }

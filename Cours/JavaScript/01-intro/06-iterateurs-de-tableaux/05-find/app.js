@@ -4,9 +4,9 @@
 //* super pour chercher une valeur unique mais pas pratique si il y en a plusieurs
 
 const people = [
-{id: 1, name: "bob", age:20, job: "developpeur"},
-{id: 2, name: "peter", age:25, job: "designer"},
-{id: 3, name: "susy", age:30, job: "la boss"},
+    {id: 1, name: "bob", age: 20, job: "developpeur"},
+    {id: 2, name: "peter", age: 25, job: "designer"},
+    {id: 3, name: "susy", age: 30, job: "la boss"},
 ];
 
 const persons = people.find(function (person) {

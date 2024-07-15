@@ -24,12 +24,13 @@ class Game {
             this.startTimer();
         }
     }
+
     addTile2048() {
         let emptyTiles = [];
         for (let i = 0; i < this.grid.length; i++) {
             for (let j = 0; j < this.grid[i].length; j++) {
                 if (this.grid[i][j] === 0) {
-                    emptyTiles.push({ x: i, y: j });
+                    emptyTiles.push({x: i, y: j});
                 }
             }
         }
@@ -42,6 +43,7 @@ class Game {
             console.log("La grille est pleine, impossible d'ajouter une tuile de 2048.");
         }
     }
+
     initEventListeners() {
         document.addEventListener('keydown', (event) => {
             switch (event.key) {
@@ -89,7 +91,8 @@ class Game {
             this.updateUI();
         }
     }
-    moveDown(){
+
+    moveDown() {
         let moved = false;
         for (let col = 0; col < 4; col++) {
             for (let row = 2; row >= 0; row--) {
@@ -117,7 +120,8 @@ class Game {
             this.checkGameOver();
         }
     }
-    moveLeft(){
+
+    moveLeft() {
         let moved = false;
         for (let row = 0; row < 4; row++) {
             for (let col = 1; col < 4; col++) {
@@ -145,7 +149,8 @@ class Game {
             this.checkGameOver();
         }
     }
-    moveRight(){
+
+    moveRight() {
         let moved = false;
         for (let row = 0; row < 4; row++) {
             for (let col = 2; col >= 0; col--) {
@@ -180,12 +185,13 @@ class Game {
             document.getElementById('time').textContent = `${this.timer} secondes`;
         }, 1000);
     }
+
     addRandomTile() {
         let emptyTiles = [];
         for (let i = 0; i < this.grid.length; i++) {
             for (let j = 0; j < this.grid[i].length; j++) {
                 if (this.grid[i][j] === 0) {
-                    emptyTiles.push({ x: i, y: j });
+                    emptyTiles.push({x: i, y: j});
                 }
             }
         }
@@ -195,6 +201,7 @@ class Game {
             this.grid[tile.x][tile.y] = Math.random() < 0.9 ? 2 : 4;
         }
     }
+
     updateUI() {
         for (let i = 0; i < this.grid.length; i++) {
             for (let j = 0; j < this.grid[i].length; j++) {
@@ -212,6 +219,7 @@ class Game {
         document.getElementById('score').textContent = this.score;
         document.getElementById('time').textContent = `${this.timer} secondes`;
     }
+
     isGameOver() {
         for (let i = 0; i < this.grid.length; i++) {
             for (let j = 0; j < this.grid[i].length; j++) {

@@ -15,7 +15,6 @@ const age = 24;
 //* il faut que les 2 valeurs soit vraies
 if (name === "bob" && age === 24) {
     console.log("salut cher utilisateur");
-}
-else {
+} else {
     console.log("mauvaise valeur");
 }

@@ -23,7 +23,7 @@ console.log(result2);
 console.log(result3);
 
 // null - "le developpeur a defini la valeur"
- const number5 = 20 + null; //* 20 + 0 
+const number5 = 20 + null; //* 20 + 0
 console.log(number5);
 
 // undefined - "js ne peut pas trouver le valeur"

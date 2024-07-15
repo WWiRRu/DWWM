@@ -10,13 +10,13 @@
 ## HTML (strucutre)
 
 - Une `<div>` avec une class `"nav"`
-  - Une `<div>` avec une classe "`nav-center"`
-    - Une `<span>` avec la classe `"nav-title"` et un texte qui fera office de logo (ex: Kofi)
+    - Une `<div>` avec une classe "`nav-center"`
+        - Une `<span>` avec la classe `"nav-title"` et un texte qui fera office de logo (ex: Kofi)
 - Une `<div>` avec la classe `"hero"`
-  - Une `<div>` avec la classe `"hero-center"`
-    - Un `<h1>` avec le texte "Marché du café"
-    - Un `<p>` avec du lorem20
-    - Un bouton `<button>` avec la classe `"hero-btn"` et le texte "Explorer"
+    - Une `<div>` avec la classe `"hero-center"`
+        - Un `<h1>` avec le texte "Marché du café"
+        - Un `<p>` avec du lorem20
+        - Un bouton `<button>` avec la classe `"hero-btn"` et le texte "Explorer"
 - Ajouter une `<div>` avec une classe `"temp"` à la fin du document HTML
 
 ## CSS (styles)

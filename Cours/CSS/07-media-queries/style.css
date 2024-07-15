@@ -6,17 +6,17 @@
 /** Mobile First */
 
 body {
-  background-color: yellow;
+    background-color: yellow;
 }
 
 .banner {
-  background-color: blue;
+    background-color: blue;
 }
 
 h1 {
-  color: #fff;
-  text-align: center;
-  text-decoration: underline;
+    color: #fff;
+    text-align: center;
+    text-decoration: underline;
 }
 
 /** min-width -- à partir de */
@@ -76,7 +76,7 @@ h1 {
 } */
 
 @media screen and (min-width: 576px) and (max-width: 768px) {
-  body {
-    background-color: red;
-  }
+    body {
+        background-color: red;
+    }
 }

@@ -10,7 +10,8 @@
 
 4. On peut voir au moins trois éléments cliquables dans l'élément `<nav>`, chacun avec la `class="nav-link"`
 
-5. Quand on clique sur un lien `.nav-link` dans l'élément `<nav>`, on est amené sur la section correspondante de la landing page
+5. Quand on clique sur un lien `.nav-link` dans l'élément `<nav>`, on est amené sur la section correspondante de la
+   landing page
 
 6. On peut regarder une vidéo intégré d'un produit avec un `id="video"`
 

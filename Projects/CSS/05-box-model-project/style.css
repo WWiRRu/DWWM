@@ -1,65 +1,65 @@
 body {
-  font-family: system-ui;
-  background-color: #f1f5f9;
+    font-family: system-ui;
+    background-color: #f1f5f9;
 }
 
 .card {
-  text-align: center;
-  background-color: #fff;
-  padding: 1.5rem 2rem;
-  max-width: 20rem;
-  margin: 3rem auto;
-  border-radius: 0.5rem;
-  border: 1px solid transparent;
+    text-align: center;
+    background-color: #fff;
+    padding: 1.5rem 2rem;
+    max-width: 20rem;
+    margin: 3rem auto;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
 }
 
 .card-1 {
-  border-color: #ff69a6;
+    border-color: #ff69a6;
 }
 
 .icon {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  margin-inline: auto;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-inline: auto;
 }
 
 .card-1 .icon {
-  background-color: #ff69a6;
+    background-color: #ff69a6;
 }
 
 .title {
-  text-transform: capitalize;
-  letter-spacing: 0.1em;
+    text-transform: capitalize;
+    letter-spacing: 0.1em;
 }
 
 .text {
-  line-height: 1.5;
-  color: #64748b;
+    line-height: 1.5;
+    color: #64748b;
 }
 
 .btn {
-  text-transform: capitalize;
-  border: transparent;
-  border-radius: 0.5rem;
-  padding: 0.5rem 1rem;
-  letter-spacing: 0.1em;
+    text-transform: capitalize;
+    border: transparent;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    letter-spacing: 0.1em;
 }
 
 .btn-pink {
-  background-color: #ffe8f1;
-  color: #ff69a6;
+    background-color: #ffe8f1;
+    color: #ff69a6;
 }
 
 .btn-blue {
-  background-color: #ecf4ff;
-  color: #68a3ff;
+    background-color: #ecf4ff;
+    color: #68a3ff;
 }
 
 .card-2 {
-  border-color: #68a3ff;
+    border-color: #68a3ff;
 }
 
 .card-2 .icon {
-  background-color: #68a3ff;
+    background-color: #68a3ff;
 }

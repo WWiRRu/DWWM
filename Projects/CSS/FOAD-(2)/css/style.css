@@ -1,97 +1,100 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
 :root {
-  --text: white;
-  --background: rgb(20, 20, 20);
-  --foreground: rgb(31, 31, 31);
-  --primary: rgb(51, 51, 51);
-  --secondary: rgb(197, 248, 42);
+    --text: white;
+    --background: rgb(20, 20, 20);
+    --foreground: rgb(31, 31, 31);
+    --primary: rgb(51, 51, 51);
+    --secondary: rgb(197, 248, 42);
 }
+
 * {
-  font-family: "Inter", sans-serif;
+    font-family: "Inter", sans-serif;
 }
+
 body {
-  background-color: var(--background);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  max-height: 100vh;
-  color: var(--text);
-  margin: 0;
+    background-color: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    max-height: 100vh;
+    color: var(--text);
+    margin: 0;
 }
 
 .card {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  background-color: var(--foreground);
-  width: 24rem;
-  height: 38.0625rem;
-  border: 1px solid var(--foreground);
-  border-radius: 12px;
-  padding: 2rem;
-  max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--foreground);
+    width: 24rem;
+    height: 38.0625rem;
+    border: 1px solid var(--foreground);
+    border-radius: 12px;
+    padding: 2rem;
+    max-width: 100%;
 }
 
 .card > * {
-  flex: 1 1 100%;
-  text-align: center;
+    flex: 1 1 100%;
+    text-align: center;
 }
 
 .card > a ~ a {
-  margin-top: 1rem;
+    margin-top: 1rem;
 }
 
 .card .location {
-  color: var(--secondary);
+    color: var(--secondary);
 }
 
 .card > a {
-  padding: 0.9rem;
-  background-color: var(--primary);
-  border: 1px;
-  margin-inline: auto;
-  border-radius: 8px;
-  text-decoration: none;
-  max-width: 304px;
-  color: var(--text);
-  font-weight: bold;
-  font-size: 1rem;
+    padding: 0.9rem;
+    background-color: var(--primary);
+    border: 1px;
+    margin-inline: auto;
+    border-radius: 8px;
+    text-decoration: none;
+    max-width: 304px;
+    color: var(--text);
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 .card > a:hover {
-  background-color: var(--secondary);
-  color: var(--primary);
+    background-color: var(--secondary);
+    color: var(--primary);
 }
 
 .card > .infos > * {
-  margin-inline: auto;
-  height: 100%;
-  max-width: 19rem;
-  max-height: 1.3125rem;
-  font-weight: bold;
+    margin-inline: auto;
+    height: 100%;
+    max-width: 19rem;
+    max-height: 1.3125rem;
+    font-weight: bold;
 }
 
 .card > .infos > :first-child {
-  margin-bottom: 0.5rem;
-  height: 100%;
-  max-width: 19rem;
-  max-height: 2.25rem;
+    margin-bottom: 0.5rem;
+    height: 100%;
+    max-width: 19rem;
+    max-height: 2.25rem;
 }
 
 .card > img:first-child {
-  margin-bottom: 1.5rem;
-  height: 88px;
-  width: 88px;
-  border-radius: 50px;
-  border: 1px solid var(--foreground);
-  object-fit: cover;
-  flex: none;
-  margin-left: 50%;
-  transform: translate(-50%, 0);
+    margin-bottom: 1.5rem;
+    height: 88px;
+    width: 88px;
+    border-radius: 50px;
+    border: 1px solid var(--foreground);
+    object-fit: cover;
+    flex: none;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .card > .description {
-  margin: 2rem 0;
-  max-width: 384px;
+    margin: 2rem 0;
+    max-width: 384px;
 }

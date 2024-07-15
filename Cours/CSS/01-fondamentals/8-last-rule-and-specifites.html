@@ -1,50 +1,56 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>Cours CSS</title>
     <style>
-      /* La dernière règle est toujours prioritaire */
-      .paragraph {
-        color: green;
-      }
-      p {
-        color: red;
-        font-size: 1vh;
-      }
-      h1 {
-        color: yellow;
-      }
-      #heading {
-        color: gray;
-      }
-      .title {
-        color: cornflowerblue;
-      }
-      p {
-        color: blue;
-      }
-      /* id > class > tag */
-      /* (*) veut dire tout mais est le moins spécifique */
-      * {
-        color: purple;
-      }
+        /* La dernière règle est toujours prioritaire */
+        .paragraph {
+            color: green;
+        }
+
+        p {
+            color: red;
+            font-size: 1vh;
+        }
+
+        h1 {
+            color: yellow;
+        }
+
+        #heading {
+            color: gray;
+        }
+
+        .title {
+            color: cornflowerblue;
+        }
+
+        p {
+            color: blue;
+        }
+
+        /* id > class > tag */
+        /* (*) veut dire tout mais est le moins spécifique */
+        * {
+            color: purple;
+        }
     </style>
-  </head>
-  <body>
-    <h1 id="heading" class="title">Je suis un titre</h1>
-    <p class="paragraph">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus sequi
-      deleniti nostrum sint, minima adipisci illum. Pariatur doloremque sunt
-      enim quasi incidunt quia doloribus, tempore, repudiandae nemo debitis
-      consectetur inventore.
-    </p>
-    <p class="paragraph">
-      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint debitis
-      recusandae ex, fugiat dolor facilis facere accusamus eaque tenetur
-      assumenda reiciendis molestiae ducimus, ut non fuga doloribus voluptatem
-      perspiciatis qui!
-    </p>
-  </body>
+</head>
+<body>
+<h1 class="title" id="heading">Je suis un titre</h1>
+<p class="paragraph">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus sequi
+    deleniti nostrum sint, minima adipisci illum. Pariatur doloremque sunt
+    enim quasi incidunt quia doloribus, tempore, repudiandae nemo debitis
+    consectetur inventore.
+</p>
+<p class="paragraph">
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint debitis
+    recusandae ex, fugiat dolor facilis facere accusamus eaque tenetur
+    assumenda reiciendis molestiae ducimus, ut non fuga doloribus voluptatem
+    perspiciatis qui!
+</p>
+</body>
 </html>

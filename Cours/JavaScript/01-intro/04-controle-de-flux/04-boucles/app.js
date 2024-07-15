@@ -24,6 +24,6 @@ do {
 
 //* boucle pour (for)
 for (let i = 0; i < 10; i++) {
-   console.log(`le nombre est : ${i}`);
-    
+    console.log(`le nombre est : ${i}`);
+
 }

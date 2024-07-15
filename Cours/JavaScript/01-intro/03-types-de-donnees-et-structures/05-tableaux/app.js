@@ -18,7 +18,8 @@ console.log(bestFriend);
 //* reassigner la valeur d'un element
 friends[4] = "anna";
 console.log(friends)
-console.log(friends[4]);;
+console.log(friends[4]);
+;
 
 //* ajoute un element
 friends[6] = "jane";

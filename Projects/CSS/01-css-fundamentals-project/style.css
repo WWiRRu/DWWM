@@ -1,13 +1,13 @@
 .icon {
-  color: red;
-  font-size: 40px;
+    color: red;
+    font-size: 40px;
 }
 
 #first,
 #second {
-  color: blue;
+    color: blue;
 }
 
 .container p {
-  color: grey;
+    color: grey;
 }

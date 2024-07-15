@@ -1,25 +1,28 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap');
 
-body{
+body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
 }
+
 h1 {
     font-family: "Trade Winds", system-ui;
     text-align: center;
 }
-.text{
+
+.text {
     font-family: system-ui;
     font-style: italic;
     text-align: end;
 }
-span{
+
+span {
     text-transform: capitalize;
     color: red;
     letter-spacing: 0.1vh;
 }
-a{
+
+a {
     color: black;
     text-decoration: none;
 }

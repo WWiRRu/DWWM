@@ -3,17 +3,21 @@ function updatedStudents(students) {
         return {...student, role: 'student'};
     });
 }
+
 function highScores(students) {
     return students.filter(student => student.score >= 80);
 }
-function specificId(specificId){
+
+function specificId(specificId) {
     return students.find(student => student.id === specificId);
 }
-function averageScore(students){
+
+function averageScore(students) {
     let totalScore = students.reduce((total, student) => total + student.score, 0);
     return totalScore / students.length;
 }
-function favoriteSubjects(students){
+
+function favoriteSubjects(students) {
     return students.reduce((subjects, student) => {
         if (subjects[student.favoriteSubject]) {
             subjects[student.favoriteSubject]++;
@@ -23,4 +27,5 @@ function favoriteSubjects(students){
         return subjects;
     }, {});
 }
+
 console.log(highScores(students));

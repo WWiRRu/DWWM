@@ -18,17 +18,23 @@
 
 8. Si on entre autre chose qu'un nombre dans l'`<input>` number, on verra une erreur HTML5 de validation
 
-9. Si on entre en-dehors dans l'intervalle de l'`<input>` number, qui est défini par les attributs `min` et `max`, on verra une erreur HTML5 de validation
+9. Si on entre en-dehors dans l'intervalle de l'`<input>` number, qui est défini par les attributs `min` et `max`, on
+   verra une erreur HTML5 de validation
 
-10. Pour les champs `name`, `email` et `number`, on peut voir des éléments `<label>` dans le formulaire qui décrivent le but de chaque champs avec les ids : `id="name-label"`, `id="email-label"` et `id="number-label"`
+10. Pour les champs `name`, `email` et `number`, on peut voir des éléments `<label>` dans le formulaire qui décrivent le
+    but de chaque champs avec les ids : `id="name-label"`, `id="email-label"` et `id="number-label"`
 
-11. Pour les champs `name`, `email` et `number`, on peut voir un placeholder qui donne une description ou une instruction pour chaque champs
+11. Pour les champs `name`, `email` et `number`, on peut voir un placeholder qui donne une description ou une
+    instruction pour chaque champs
 
-12. Dans l'élément `<form>`, on doit voir un élément `<select>` avec un `id="dropdown"` et au moins deux options pour choisir
+12. Dans l'élément `<form>`, on doit voir un élément `<select>` avec un `id="dropdown"` et au moins deux options pour
+    choisir
 
-13. Dans l'élément `<form>`, on peut sélectionner dans un groupe d'au moins deux boutons radio groupés avec un attribut `name`
+13. Dans l'élément `<form>`, on peut sélectionner dans un groupe d'au moins deux boutons radio groupés avec un
+    attribut `name`
 
-14. Dans l'élément `<form>`,on peut sélectionner plusieurs champs dans un série de checkboxes, chacune ayant un attribut `value`
+14. Dans l'élément `<form>`,on peut sélectionner plusieurs champs dans un série de checkboxes, chacune ayant un
+    attribut `value`
 
 15. Dans l'élément `<form>`, on peut voir un élément `<textarea>` pour des commentaires additionnels
 

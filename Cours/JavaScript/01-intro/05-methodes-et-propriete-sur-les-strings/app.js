@@ -22,7 +22,7 @@ console.log(text.startsWith("john"));
 console.log(text.trim().toLowerCase().startsWith("john"));
 console.log(text.includes("hn"));
 //* slice(start, end - 1)
-console.log(text.slice(0,2));
+console.log(text.slice(0, 2));
 console.log(text.slice(1));
 //* le dernier caractere
 console.log(text.slice(-1));

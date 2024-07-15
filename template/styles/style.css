@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Tiny5&display=swap');
 
 /*! RESET */
-*{
+* {
     /*Reset margins*/
     margin: 0;
 
@@ -13,7 +13,7 @@
     box-sizing: border-box;
 }
 
-:root{
+:root {
     /*Vars for font family*/
     --ff-headings: "Tiny5", sans-serif;
     --ff-bodys: "Tiny5", sans-serif;
@@ -24,7 +24,7 @@
     --fs-s: clamp(1.25rem, 2.5vw, 2.5rem);
     --fs-m: clamp(1.5rem, 3vw, 3rem);
     --fs-l: clamp(2rem, 5vw, 5rem);
-    
+
     /*Vars for font weight*/
     --fw-bold: 800;
     --fw-medium: 600;
@@ -48,7 +48,7 @@
 
     --color-green-50: #f7fee7;
     --color-green-800: #3f6212;
-    
+
     --color-red-50: #fef2f2;
     --color-red-800: #991b1b;
 
@@ -56,7 +56,7 @@
     --fixed-width: 37.5rem;
 }
 
-body{
+body {
     font-family: var(--ff-bodys);
     font-weight: var(--fw-regular);
     line-height: 1.5;
@@ -68,39 +68,43 @@ body{
     margin: 1.5rem;
 }
 
-h1, h2, h3, h4, h5{
+h1, h2, h3, h4, h5 {
     text-wrap: balance;
     font-weight: var(--fw-medium);
     line-height: 1.1;
     margin: 0;
 }
-p{
+
+p {
     max-inline-size: 60ch;
     text-wrap: pretty;
 }
-a{
+
+a {
     text-decoration: none;
     color: var(--color-primary-800);
     transition: all 0.3s;
 }
 
-a:hover{
+a:hover {
     color: var(--color-primary-500);
 }
 
-ul,ol{
+ul, ol {
     list-style: none;
 }
 
-.img{
+.img {
     object-fit: cover;
     max-inline-size: 100%;
     display: block;
 }
-button{
+
+button {
     cursor: pointer;
 }
-.btn{
+
+.btn {
     font-size: var(--fs-m);
     font-weight: var(--fw-medium);
     color: var(--color-white);
@@ -113,13 +117,13 @@ button{
     transition: all 0.5s linear;
 }
 
-.btn:hover{
-    background-color:var(--color-primary-500);
+.btn:hover {
+    background-color: var(--color-primary-500);
     color: var(--color-light-grey);
     box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
 
-.alert{
+.alert {
     padding: 1rem;
     font-weight: var(--fw-medium);
     margin-bottom: 1rem;
@@ -127,17 +131,17 @@ button{
     border-radius: 5px solid var(--color-black);
 }
 
-.alert-danger{
+.alert-danger {
     background-color: var(--color-red-50);
     color: var(--color-red-800);
 }
 
-.alert-success{
+.alert-success {
     background-color: var(--color-green-50);
     color: var(--color-green-800);
 }
 
-.form{
+.form {
     background-color: var(--color-white);
     width: var(--fluid-width);
     max-width: var(--fixed-width);
@@ -147,17 +151,18 @@ button{
     padding: 2rem;
 }
 
-.form-label{
+.form-label {
     display: block;
     font-size: var(--fs-s);
     font-weight: var(--fw-medium);
     line-height: 1.25rem;
 }
-.form-row{
+
+.form-row {
     margin-block-end: 1rem;
 }
 
-.form-input, .form-textarea{
+.form-input, .form-textarea {
     inline-size: 100%;
     padding: 0.375rem 0.75rem;
     background-color: var(--color-primary-300);
@@ -166,22 +171,22 @@ button{
     font-size: var(--fs-s);
 }
 
-.form-textarea{
+.form-textarea {
     min-height: 10em;
 }
 
-::placeholder{
+::placeholder {
     /*Héritage de font*/
     font-family: inherit;
     color: var(--color-primary-300);
 
 }
 
-.btn-block{
+.btn-block {
     inline-size: 100%;
 }
 
-.loading{
+.loading {
     width: 3rem;
     height: 3rem;
     border: 5px solid var(--color-light-grey);
@@ -190,24 +195,27 @@ button{
     border-top-color: var(--color-primary-500);
     animation: spin 1.6s linear infinite;
 }
-@keyframes spin{
-    to{
+
+@keyframes spin {
+    to {
         transform: rotate(360deg);
     }
 }
 
-.section{
+.section {
     padding-block: 5rem;
 
 }
 
-.title{
+.title {
     text-align: center;
 }
-.title > h2{
+
+.title > h2 {
     margin-block-end: 0.5em;
 }
-.title-underline{
+
+.title-underline {
     background-color: var(--color-primary-500);
     height: 0.25rem;
     width: 11.5rem;

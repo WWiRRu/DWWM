@@ -15,17 +15,17 @@
 ## HTML
 
 - Une `<section>` avec la classe `"blogs"`
-  - Une `<div>` avec la classe `"section-title"`
-    - Un `<h2>` avec le texte `"derniers articles"`
-  - Une `<div>` avec la classe `"blogs-center"`
-    - Un `<article>` avec la classe `"blog"`
-      - `<img>`
-      - Une `<div>` avec la classe `"blog-content"`
-        - Une `<span>` avec du texte et n'importe quel icône
-        - Un `<h3>`
-        - Un `<p>` (lorem15)
-        - Un `<a>` (href="#") "en savoir plus
-  - Copier/coller plusieurs fois `.blog`
+    - Une `<div>` avec la classe `"section-title"`
+        - Un `<h2>` avec le texte `"derniers articles"`
+    - Une `<div>` avec la classe `"blogs-center"`
+        - Un `<article>` avec la classe `"blog"`
+            - `<img>`
+            - Une `<div>` avec la classe `"blog-content"`
+                - Une `<span>` avec du texte et n'importe quel icône
+                - Un `<h3>`
+                - Un `<p>` (lorem15)
+                - Un `<a>` (href="#") "en savoir plus
+    - Copier/coller plusieurs fois `.blog`
 
 ## Reset
 

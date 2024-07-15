@@ -1,4 +1,4 @@
-   document.querySelectorAll(".btn").forEach((btn) => {
+document.querySelectorAll(".btn").forEach((btn) => {
     console.log(btn);
 
     btn.addEventListener("click", () => {
@@ -6,5 +6,5 @@
     });
 });
 
-        // affiche la console
-        console.log("hello word");
+// affiche la console
+console.log("hello word");

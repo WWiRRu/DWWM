@@ -16,7 +16,7 @@ const value1 = true;
 const value2 = false;
 
 //* Null
-const result= null;
+const result = null;
 
 //* Undefined
 let name;

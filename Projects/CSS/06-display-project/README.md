@@ -10,14 +10,14 @@
 ## HTML (strucutre)
 
 - Créer une `<div>` avec la classe `"section"`
-  - Dedans, placer :
-    - Une `<div>` avec la classe `"section-title"`
-      - Dedans, placer :
-      - Un `<h1>`avec le texte "Tire de la section"
-      - Une `<div>` avec la classe `"title-underline"`
-    - Une `<div>` avec la classe `"section-center"`
-      - Dedans, placer :
-      - Un `<p>` avec du lorem
+    - Dedans, placer :
+        - Une `<div>` avec la classe `"section-title"`
+            - Dedans, placer :
+            - Un `<h1>`avec le texte "Tire de la section"
+            - Une `<div>` avec la classe `"title-underline"`
+        - Une `<div>` avec la classe `"section-center"`
+            - Dedans, placer :
+            - Un `<p>` avec du lorem
 
 ## CSS (styles)
 
@@ -25,14 +25,16 @@
 - Sélectionner le `body`, ajouter les system fonts, background (`#f1f5f9`), line-height
 - Sélectionner `.section`, ajouter padding, background (`#fff`)
 - Sélectionner `.section-title`, ajouter text-align, text-transform
-- Sélectionner `.title-underline`, ajouter height, width, background, placer au centre et ajouter une marge en-dessous pour "souligner" le titre
+- Sélectionner `.title-underline`, ajouter height, width, background, placer au centre et ajouter une marge en-dessous
+  pour "souligner" le titre
 - Sélectionner `.section-center`, ajouter width (`90vw`), max-width (`600px`) et placer au centre
 
 ## Questions
 
 - Pourquoi `.section-title` dans une div à part ?
 
-  Il n'y a pas de modèles/composants en HTML donc il faut copier/coller le code. C'est plus pratique de réutiliser une `<div>`
+  Il n'y a pas de modèles/composants en HTML donc il faut copier/coller le code. C'est plus pratique de réutiliser
+  une `<div>`
 
 - Pourquoi `90vw` et `600px` ?
 

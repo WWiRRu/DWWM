@@ -10,8 +10,8 @@
 ## HTML (structure)
 
 - Une `<div>` avec une classe `"container"` et dans la `<div>` :
-  - Un `<h3>`
-  - Un `<p>` avec du lorem (lorem10)
+    - Un `<h3>`
+    - Un `<p>` avec du lorem (lorem10)
 - Ajouter les commentaires de début/fin de la `<div>`
 - Copier/coller deux fois (trois conteneurs au total)
 - Ajouter une classe `"special-container"` en plus de celle existante au troisème conteneur

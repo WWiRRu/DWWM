@@ -4,25 +4,26 @@
 /** WIDTH - Largeur d'un élément */
 /** HEIGHT  - Hauteur d'un élément */
 h1 {
-  /** PX - Valeur absolue. La taille sera la même, peu importe la taille de l'écran */
-  font-size: 60px;
-  width: 200px;
-  height: 400px;
-  background-color: blue;
-  color: white;
+    /** PX - Valeur absolue. La taille sera la même, peu importe la taille de l'écran */
+    font-size: 60px;
+    width: 200px;
+    height: 400px;
+    background-color: blue;
+    color: white;
 }
 
 /* 2 */
 /** POURCENTAGE - Unité relative. Dépend du parent*/
 .inner {
-  width: 50%;
-  height: 50%;
-  background-color: red;
+    width: 50%;
+    height: 50%;
+    background-color: red;
 }
+
 .outer {
-  width: 200px;
-  height: 200px;
-  background-color: green;
+    width: 200px;
+    height: 200px;
+    background-color: green;
 }
 
 /* 3 */
@@ -30,23 +31,27 @@ h1 {
 /* 1em - valeur de base (16px) * nombre (1) = 16px */
 /* 2em - valeur de base (16px) * nombre (1) = 32px */
 /* 3em - valeur de base (16px) * nombre (1) = 48px */
-.relative{
-  font-size: 3em;
+.relative {
+    font-size: 3em;
 }
-.absolute{
-  font-size: 48px ;
+
+.absolute {
+    font-size: 48px;
 }
-div{
-  font-size: 10px;
+
+div {
+    font-size: 10px;
 }
+
 /* 4 */
 /** rem - Unité relative. Dépend de la racine <html> */
 /** 1rem = valeur de base (16px) * nombre (1) = 16px */
-.normal{
-  font-size: 32px;
+.normal {
+    font-size: 32px;
 }
-.rem{
-  font-size: 2rem;
+
+.rem {
+    font-size: 2rem;
 }
 
 /* 5 */
@@ -54,19 +59,21 @@ div{
 /** vh - viewport height - Pourcentage de l'écran */
 /** dvh - dynamic viewport height - Pourcentage de l'écran */
 /** vw - viewport width - Pourcentage de l'écran */
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.hero{
-  background: green;
-  height: 100vh;
-  height: 100dvh;
-  width: 21vw;
+
+.hero {
+    background: green;
+    height: 100vh;
+    height: 100dvh;
+    width: 21vw;
 }
-.about{
-  background: blue;
-  height: 43vh;
-  width: 54vw;
+
+.about {
+    background: blue;
+    height: 43vh;
+    width: 54vw;
 }

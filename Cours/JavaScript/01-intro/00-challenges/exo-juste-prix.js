@@ -1,6 +1,7 @@
 let essaie = 10;
 let player = null;
-const nbr = Math.floor(Math.random()*100 ) + 1;
+const nbr = Math.floor(Math.random() * 100) + 1;
+
 function price() {
     while (essaie > 0 && player !== nbr) {
         player = window.prompt(`Donner un nombre : nombre d'essaie restant ${essaie}`);
@@ -25,5 +26,6 @@ function price() {
         }
     }
 }
+
 console.log(nbr);
 

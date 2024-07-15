@@ -24,4 +24,5 @@ function formatDuration(seconds) {
         ? parts.slice(0, -1).join(", ") + " and " + parts[parts.length - 1]
         : parts[0];
 }
+
 console.log(formatDuration(3600));

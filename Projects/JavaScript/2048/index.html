@@ -2,9 +2,9 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>2048</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
 <div class="game-container">
@@ -15,7 +15,7 @@
     <div class="score-container">
         Temps de la partie: <span id="time"></span>
     </div>
-    <button onclick="new Game()" id="reset-button">Nouveau Jeu</button>
+    <button id="reset-button" onclick="new Game()">Nouveau Jeu</button>
     <div class="game-board">
         <div class="tile" id="tile-1"></div>
         <div class="tile" id="tile-2"></div>

@@ -36,55 +36,72 @@ body {
     "equals equals equals equals";
     gap: 0.5rem;
 }
-#1{
+
+#1 {
     grid-area: 1;
 }
-#2{
+
+#2 {
     grid-area: 2;
 }
-#3{
+
+#3 {
     grid-area: 3;
 }
-#4{
+
+#4 {
     grid-area: 4;
 }
-#5{
+
+#5 {
     grid-area: 5;
 }
-#6{
+
+#6 {
     grid-area: 6;
 }
-#7{
+
+#7 {
     grid-area: 7;
 }
-#8{
+
+#8 {
     grid-area: 8;
 }
-#9{
+
+#9 {
     grid-area: 9;
 }
-#0{
+
+#0 {
     grid-area: 0;
 }
-#addition{
+
+#addition {
     grid-area: addition;
 }
-#soustraction{
+
+#soustraction {
     grid-area: soustraction;
 }
-#multiply{
+
+#multiply {
     grid-area: multiply;
 }
-#divide{
+
+#divide {
     grid-area: divide;
 }
-#dot{
+
+#dot {
     grid-area: dot;
 }
-#equals{
+
+#equals {
     grid-area: equals;
 }
-#delete{
+
+#delete {
     grid-area: delete;
 }
 
@@ -100,20 +117,25 @@ body {
     background-color: #007bff;
     transition: all 0.3s linear;
 }
+
 .number-btn:hover {
     background-color: #0050a8;
 }
-.addition-btn{
+
+.addition-btn {
     background-color: #01bf30;
     transition: all 0.3s linear;
 }
-.addition-btn:hover{
+
+.addition-btn:hover {
     background-color: #00751e;
 }
+
 .erase-btn {
     background-color: #dc3545;
     transition: all 0.3s linear;
 }
+
 .erase-btn:hover {
     background-color: #8f242f;
 }
@@ -123,6 +145,7 @@ body {
     grid-column: span 2;
     transition: all 0.3s linear;
 }
+
 .equals-btn:hover {
     background-color: #175c24;
 }
@@ -131,16 +154,20 @@ body {
     background-color: #ffc107;
     transition: all 0.3s linear;
 }
+
 .multiply-btn:hover, .divide-btn:hover {
     background-color: #9e7709;
 }
-.dot-btn{
+
+.dot-btn {
     background-color: #6c757d;
     transition: all 0.3s linear;
 }
-.dot-btn:hover{
+
+.dot-btn:hover {
     background-color: #4f5053;
 }
+
 @keyframes click {
     50% {
         transform: scale(0.9);

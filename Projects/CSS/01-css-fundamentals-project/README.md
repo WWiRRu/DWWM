@@ -11,9 +11,9 @@
 
 - Une `<div>` avec une classe `"container"`
 - Dans la `<div>` :
-  - Une `span` avec une classe `"icon"` contenant un nombre
-  - Un `<h2>` avec un id `"first"`
-  - Un `<p>` avec du lorem (lorem10)
+    - Une `span` avec une classe `"icon"` contenant un nombre
+    - Un `<h2>` avec un id `"first"`
+    - Un `<p>` avec du lorem (lorem10)
 - Ajouter les commentaires pour délimiter début/fin de la `<div>`
 - Copier/coller une fois (deux conteneurs au total)
 - Changer l'id du titre dans la seconde `<div>` pour `"second"`

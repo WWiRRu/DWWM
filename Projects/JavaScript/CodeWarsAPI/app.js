@@ -11,6 +11,7 @@ async function getKata(user) {
         return null;
     }
 }
+
 (async () => {
     await getKata("WWiRRu").then(data => {
         console.log("ID: ", data.id);

@@ -1,15 +1,12 @@
-
-
-function calculateTotale (subTotal, taxt) {
+function calculateTotale(subTotal, taxt) {
 
     return subTotal + taxt;
 };
 console.log(calculateTotale(15, 5));
 
-let order1 = calculateTotale(14, 20) ;
+let order1 = calculateTotale(14, 20);
 let order2 = calculateTotale(25, 88);
-let order3  = calculateTotale(60, 21);
-
+let order3 = calculateTotale(60, 21);
 
 
 const totale = (subTotal, taxt) => (subTotal + taxt);

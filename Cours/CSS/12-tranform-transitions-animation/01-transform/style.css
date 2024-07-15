@@ -1,24 +1,26 @@
-div{
+div {
     width: 200px;
     height: 200px;
 }
 
 
-.one{
+.one {
     background: red;
     transform: translateX(50%);
     transform: scaleX(0.5);
     transform: rotate(20deg);
     transform: skewX(40deg);
 }
-.two{
-   background: green;
-   transform: translateY(-50%);
-   transform: scaleY(0.5);
-   transform: rotate(380deg); /* 360 + 20 */
-   transform: skewY(40deg);
+
+.two {
+    background: green;
+    transform: translateY(-50%);
+    transform: scaleY(0.5);
+    transform: rotate(380deg); /* 360 + 20 */
+    transform: skewY(40deg);
 }
-.three{
+
+.three {
     background: blue;
     /*X d'abbord et Y après*/
     transform: translate(50%, 50%);

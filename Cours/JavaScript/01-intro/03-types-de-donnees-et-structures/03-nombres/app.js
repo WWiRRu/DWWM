@@ -25,7 +25,7 @@ const div = number1 / number2;
 
 //* +=, -=, *=, /=, ++, --, %
 let number = 40;
-number = number +5;
+number = number + 5;
 number += 5;
 number += 5;
 number += 5;

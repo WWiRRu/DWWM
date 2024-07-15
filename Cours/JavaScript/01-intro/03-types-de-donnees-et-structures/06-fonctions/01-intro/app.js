@@ -35,8 +35,9 @@ hello();
 // parametres/arguments
 //  ce sont des espaces reserves (placeholders), des variables locales
 function greet(name) {
-console.log(`hello ${name}`);
+    console.log(`hello ${name}`);
 }
+
 //! "name" est undefined
 greet();
 
@@ -54,7 +55,7 @@ const anna = "anna"
 greet(peter);
 
 //* on peut avoir plusieurs parametre
-function sayHello(name, second){
+function sayHello(name, second) {
     console.log(second);
     console.log(`hello ${name}`);
 }
