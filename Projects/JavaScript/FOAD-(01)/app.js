@@ -41,7 +41,7 @@ function playGame() {
     for (let i = 0; i < 5; i++) {
         const humanChoice = getHumanChoice();
         const computerChoice = getComputerChoice();
-        if (typeof humanChoice !== 'string' || humanChoice === "" || CHOICES.includes(humanChoice) === false){
+        if (typeof humanChoice !== 'string' || humanChoice === "" || !CHOICES.includes(humanChoice)){
             console.error('Le choix doit être ' + CHOICES.join(', ') + ' ou ne doit pas être vide.');
             return;
         }
