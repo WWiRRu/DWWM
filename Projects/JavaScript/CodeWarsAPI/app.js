@@ -4,8 +4,7 @@ async function getKata(user) {
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
-        const data = await response.json();
-        return data;
+        return await response.json();
     } catch (error) {
         console.error("Error fetching data: ", error);
         return null;
@@ -25,7 +24,5 @@ async function getKata(user) {
             console.log(`  Score: ${languageDetails.score}`);
             console.log("----------------------");
         });
-        console.log("----------------------");
-        console.log(data);
     })
 })();
