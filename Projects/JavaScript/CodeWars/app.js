@@ -83,7 +83,7 @@ function openOrSenior(data){
  * @returns {number}
  */
 function findOutlier(integers){
-    let even = integers.filter(n => n % 2 === 0);
-    let odd = integers.filter(n => n % 2 !== 0);
-    return even.length === 1 ? even[0] : odd[0];
+    return integers.filter(n => n % 2 === 0).length === 1 ? integers.filter(n => n % 2 === 0)[0] : integers.filter(n => n % 2 !== 0)[0];
 }
+
+console.log(findOutlier([0, 1, 2, 4, 6, 8, 10]));
