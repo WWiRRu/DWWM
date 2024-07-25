@@ -1,6 +1,44 @@
-async function getKata(user) {
+const kataContainer = document.querySelector(".kata-container");
+
+const form = document.getElementById('kata-inf');
+form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+    kataContainer.innerHTML = '';
+    const ign = document.getElementById("ign");
+    await getKata(ign.value).then(data => {
+        if (data) {
+            const clan = data.clan ?? "Aucun";
+            const languages = data.ranks.languages;
+            const userCard = document.createElement("div");
+            userCard.classList.add("card");
+            userCard.innerHTML = `
+                <h2>Utilisateur: ${data.username}</h2>
+                <p>Honneur: ${data.honor}</p>
+                <p>Clan: ${clan}</p>
+            `;
+            const languagesCard = document.createElement("div");
+            languagesCard.classList.add("card");
+            languagesCard.innerHTML = `<h3>Langages:</h3>`;
+
+            for (const [key, value] of Object.entries(languages)) {
+                const languageElement = document.createElement("p");
+                languageElement.textContent = `${key}`;
+                languageElement.style.color = value.color;
+                languagesCard.appendChild(languageElement);
+            }
+            kataContainer.appendChild(userCard);
+            kataContainer.appendChild(languagesCard);
+        } else {
+            const errorCard = document.createElement("div");
+            errorCard.classList.add("card");
+            errorCard.textContent = "Aucune donnée pour l'utilisateur.";
+            kataContainer.appendChild(errorCard);
+        }
+    });
+});
+async function getRequest(link) {
     try {
-        const response = await fetch(`https://www.codewars.com/api/v1/users/${user}`);
+        const response = await fetch(link);
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
@@ -10,19 +48,6 @@ async function getKata(user) {
         return null;
     }
 }
-
-(async () => {
-    await getKata("WWiRRu").then(data => {
-        console.log("ID: ", data.id);
-        console.log("Username: ", data.username);
-        console.log("Honor: ", data.honor);
-        console.log("Leaderboard Position: ", data.leaderboardPosition);
-        console.log("CodeChallengesTotal: ", data.codeChallenges.totalCompleted);
-        Object.entries(data.ranks.languages).forEach(([languageName, languageDetails]) => {
-            console.log(`Language: ${languageName}`);
-            console.log(`  Rank: ${languageDetails.name}`);
-            console.log(`  Score: ${languageDetails.score}`);
-            console.log("----------------------");
-        });
-    })
-})();
+async function getKata(user){
+    return await getRequest(`https://www.codewars.com/api/v1/users/${user}`);
+}

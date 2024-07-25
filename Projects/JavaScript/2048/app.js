@@ -39,8 +39,6 @@ class Game {
             const tile = emptyTiles[randomTileIndex];
             this.grid[tile.x][tile.y] = 2048;
             this.updateUI();
-        } else {
-            console.log("La grille est pleine, impossible d'ajouter une tuile de 2048.");
         }
     }
 
