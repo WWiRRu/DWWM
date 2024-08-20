@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Grocery List</title>
+</head>
+<body>
+<section class="section-center">
+    <form class="grocery-form">
+        <p class="alert"></p>
+        <h3>Liste de courses</h3>
+        <div class="form-control">
+            <label for="grocery">Écrivez votre liste de courses</label><input type="text" id="grocery" placeholder="Ex: oeufs">
+            <button type="submit" class="submit-btn">Ajouter</button>
+        </div>
+    </form>
+    <div class="grocery-container">
+        <div class="grocery-list"></div>
+        <button type="button" class="clear-btn">
+            Vider la liste
+        </button>
+    </div>
+</section>
+<script src="app.js"></script>
+</body>
+</html>
